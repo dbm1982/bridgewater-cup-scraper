@@ -1,55 +1,49 @@
 import pandas as pd
-from datetime import datetime
-import re
 
-df = pd.read_csv("gotsport_raw.csv")
+def normalize_time(row):
+    """
+    Combine the date and time fields into a single datetime string.
+    GotSport usually formats Time like:
+    'Jun 28, 2026 9:10AM EDT'
+    """
+    t = row["Time"].replace("\n", " ").strip()
+    return t
 
-def parse_datetime(s):
-    s = str(s).replace("  ", " ").replace(" EDT", "")
-    return datetime.strptime(s, "%b %d, %Y %I:%M%p")
+def main():
+    df = pd.read_csv("gotsport_raw.csv")
 
-df["datetime"] = df["Time"].apply(parse_datetime)
-df["date"] = df["datetime"].dt.date
-df["time"] = df["datetime"].dt.time
+    # Clean whitespace
+    df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 
-def split_field_format(location):
-    parts = str(location).split(" - ")
-    if len(parts) >= 3:
-        return parts[1], parts[2]
-    return None, None
+    # Normalize datetime
+    df["datetime"] = df.apply(normalize_time, axis=1)
 
-df["field"], df["format"] = zip(*df["Location"].apply(split_field_format))
+    # Clean team names
+    df["Home Team"] = df["Home Team"].str.replace(r"\s+", " ", regex=True)
+    df["Away Team"] = df["Away Team"].str.replace(r"\s+", " ", regex=True)
 
-def clean_team(name):
-    name = re.sub(r"\s+", " ", str(name).strip())
-    return name
+    # Clean location
+    if "Location" in df.columns:
+        df["Location"] = df["Location"].str.replace(r"\s+", " ", regex=True)
 
-df["home_team"] = df["Home Team"].apply(clean_team)
-df["away_team"] = df["Away Team"].apply(clean_team)
-
-# Use GotSport division column if present, else the raw name we captured
-if "Division" in df.columns:
-    df["division"] = df["Division"].astype(str).str.strip()
-else:
-    df["division"] = df["division_name_raw"].astype(str).str.strip()
-
-df["match_id"] = df["Match #"]
-
-final = df[
-    [
-        "match_id",
-        "division",
-        "date",
-        "time",
+    # Final column order
+    keep_cols = [
+        "Division",
+        "Match #",
         "datetime",
-        "home_team",
-        "away_team",
-        "field",
-        "format",
+        "Home Team",
+        "Results",
+        "Away Team",
         "Location",
-        "source_url",
     ]
-]
 
-final.to_csv("gotsport_normalized.csv", index=False)
-print("Saved gotsport_normalized.csv")
+    # Only keep columns that actually exist
+    keep_cols = [c for c in keep_cols if c in df.columns]
+
+    final = df[keep_cols]
+
+    final.to_csv("gotsport_normalized.csv", index=False)
+    print("Saved gotsport_normalized.csv")
+
+if __name__ == "__main__":
+    main()
