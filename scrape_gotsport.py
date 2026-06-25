@@ -53,6 +53,7 @@ def parse_schedule_table(table, division_name):
 def scrape_division(div):
     all_days = []
     base_url = div["url"]
+    print("DEBUG: Using base_url =", base_url)
     division_name = div["name"]
 
     # ----------------------------------------------------
