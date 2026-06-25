@@ -53,9 +53,16 @@ def scrape_division(div):
     all_days = []
     base_url = div["url"]
 
+    division_name = div["name"]
+    is_bracket_division = (
+        "GU10" in division_name or
+        "GU12" in division_name
+    )
+
     # ----------------------------------------------------
-    # 1. SCRAPE FULL BRACKET/DIVISION PAGE (NO DATE FILTER)
+    # 1. ALWAYS scrape the full page (contains bracket games)
     # ----------------------------------------------------
+    print("SCRAPING FULL PAGE:", base_url)
     html = fetch_html(base_url)
     soup = BeautifulSoup(html, "html.parser")
 
@@ -66,16 +73,25 @@ def scrape_division(div):
             "match #" in headers
             or ("time" in headers and "home" in headers and "away" in headers)
         ):
-            df = parse_schedule_table(table, div["name"])
+            df = parse_schedule_table(table, division_name)
             if df is not None:
                 all_days.append(df)
             break
 
     # ----------------------------------------------------
-    # 2. SCRAPE EACH DATE PAGE (POOL GAMES)
+    # 2. If this is a bracket division, STOP HERE
+    #    (full page already contains ALL games)
+    # ----------------------------------------------------
+    if is_bracket_division:
+        print(f"Bracket division detected ({division_name}) — skipping date pages.")
+        return pd.concat(all_days, ignore_index=True)
+
+    # ----------------------------------------------------
+    # 3. Otherwise, scrape date pages (pool-only divisions)
     # ----------------------------------------------------
     for date in TOURNAMENT_DATES:
         url = f"{base_url}&date={date}"
+        print("SCRAPING DATE PAGE:", url)
         html = fetch_html(url)
         soup = BeautifulSoup(html, "html.parser")
 
@@ -86,7 +102,7 @@ def scrape_division(div):
                 "match #" in headers
                 or ("time" in headers and "home" in headers and "away" in headers)
             ):
-                df = parse_schedule_table(table, div["name"])
+                df = parse_schedule_table(table, division_name)
                 if df is not None:
                     all_days.append(df)
                 break
@@ -94,10 +110,11 @@ def scrape_division(div):
         time.sleep(0.5)
 
     if not all_days:
-        print(f"No schedules found for {div['name']}")
+        print(f"No schedules found for {division_name}")
         return None
 
     return pd.concat(all_days, ignore_index=True)
+
 
 def main():
     divisions = load_divisions()
