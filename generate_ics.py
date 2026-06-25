@@ -10,25 +10,19 @@ def main():
     os.makedirs("calendars/teams", exist_ok=True)
 
     df = pd.read_csv("gotsport_normalized.csv")
-
-    # Normalize column names (strip whitespace)
     df.columns = [c.strip() for c in df.columns]
 
-    # Required columns
-    required = ["Division", "datetime", "Home Team", "Away Team", "Location"]
+    required = ["Division", "Match #", "datetime", "Home Team", "Away Team", "Location"]
     for col in required:
         if col not in df.columns:
             raise ValueError(f"Missing required column: {col}")
 
-    # Last refreshed timestamp
     last_updated = datetime.now().strftime("%b %d, %Y %I:%M %p")
 
-    # -----------------------------------------
-    # DIVISION ICS GENERATION
-    # -----------------------------------------
-    divisions = df["Division"].unique()
-
-    for div in divisions:
+    # ----------------------------------------------------
+    # DIVISION ICS
+    # ----------------------------------------------------
+    for div in df["Division"].unique():
         cal = Calendar()
         subset = df[df["Division"] == div]
 
@@ -38,11 +32,7 @@ def main():
             event.begin = row["datetime"]
             event.location = row["Location"]
 
-            game_number = (
-                row.get("game_id", "")
-                or row.get("Game Number", "")
-                or ""
-            )
+            game_number = row.get("Match #", "")
 
             event.description = (
                 f"Field: {row['Location']}\n"
@@ -59,25 +49,27 @@ def main():
 
         print(f"Saved {filename}")
 
-    # -----------------------------------------
-    # PER-TEAM ICS GENERATION
-    # -----------------------------------------
+    # ----------------------------------------------------
+    # TEAM ICS
+    # ----------------------------------------------------
     team_cals = defaultdict(Calendar)
 
     for _, row in df.iterrows():
         home = row["Home Team"]
         away = row["Away Team"]
 
+        # Normalize bracket teams
+        if "Bracket" in home:
+            home = home.strip()
+        if "Bracket" in away:
+            away = away.strip()
+
         event = Event()
-        event.name = f"{home} vs {away}"
+        event.name = f"{row['Home Team']} vs {row['Away Team']}"
         event.begin = row["datetime"]
         event.location = row["Location"]
 
-        game_number = (
-            row.get("game_id", "")
-            or row.get("Game Number", "")
-            or ""
-        )
+        game_number = row.get("Match #", "")
 
         event.description = (
             f"Field: {row['Location']}\n"
@@ -91,28 +83,29 @@ def main():
 
     for team, cal in team_cals.items():
 
-        # Determine correct division for this team
-        first_event = next(iter(cal.events))
-        # Extract division from the event description in df
-        # We stored division only in the division ICS, so we re-derive it:
-        # Look up any row matching this team
-        sample_row = df[(df["Home Team"] == team) | (df["Away Team"] == team)].iloc[0]
-        division = sample_row["Division"]
-        agegroup = division.split()[0]  # GU12, BU8, etc.
+        # Skip teams with zero events
+        if len(cal.events) == 0:
+            continue
 
-        # Build safe filename
+        # Find a row for this team to determine division
+        sample = df[(df["Home Team"] == team) | (df["Away Team"] == team)]
+        if sample.empty:
+            continue
+
+        division = sample.iloc[0]["Division"]
+        agegroup = division.split()[0]
+
         safe_team = team.replace(" ", "_").replace("/", "_")
-        safe = f"{safe_team}_{agegroup}"
+        filename = f"calendars/teams/{safe_team}_{agegroup}.ics"
 
-        filename = f"calendars/teams/{safe}.ics"
         with open(filename, "w") as f:
             f.writelines(cal)
 
         print(f"Saved {filename}")
 
-    # -----------------------------------------
-    # COMBINED ICS (ALL GAMES)
-    # -----------------------------------------
+    # ----------------------------------------------------
+    # COMBINED ICS
+    # ----------------------------------------------------
     full = Calendar()
 
     for _, row in df.iterrows():
@@ -121,11 +114,7 @@ def main():
         event.begin = row["datetime"]
         event.location = row["Location"]
 
-        game_number = (
-            row.get("game_id", "")
-            or row.get("Game Number", "")
-            or ""
-        )
+        game_number = row.get("Match #", "")
 
         event.description = (
             f"Field: {row['Location']}\n"
