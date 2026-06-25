@@ -3,37 +3,37 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T223000Z
-SUMMARY:Vikings United U8 vs HAYSA
-UID:c71f14aa-205c-424a-9ae0-7ea1f10868c3@c71f.org
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T201000Z
+SUMMARY:Weigold vs Vikings United U8
+UID:1d5bcf1c-ae9f-4e99-b193-54a45cb4fe33@1d5b.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 White
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T201000Z
 SUMMARY:BYSA Marsh vs Rising Stars FC Rising Stars FC U9
-UID:755fd854-24ec-4025-a4d5-c6030b5de3ce@755f.org
+UID:74fc57ac-fd28-4975-a148-ab71841082a2@74fc.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 White
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T153000Z
 SUMMARY:Rising Stars FC Rising Stars FC U9 vs Weigold
-UID:ae717667-0e4f-4384-99f3-c9a92fba1344@ae71.org
+UID:c9390c2f-e585-4c1a-9697-d669567ed4cf@c939.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 White
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T223000Z
+SUMMARY:Vikings United U8 vs HAYSA
+UID:7b357ba7-2399-4ca9-a19d-796c95a18f85@7b35.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 White
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T164000Z
 SUMMARY:HAYSA vs BYSA Marsh
-UID:1db91287-a963-4453-8f81-cb4625494f09@1db9.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 White
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T201000Z
-SUMMARY:Weigold vs Vikings United U8
-UID:9ccec241-9001-4859-a0bc-a74ddc71cf70@9cce.org
+UID:6adf1fbf-3ac6-485f-b57b-38b3888f46de@6adf.org
 END:VEVENT
 END:VCALENDAR
