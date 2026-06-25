@@ -53,12 +53,11 @@ def parse_schedule_table(table, division_name):
 def scrape_division(div):
     all_days = []
     base_url = div["url"]
-    print("DEBUG: Using base_url =", base_url)
     division_name = div["name"]
 
-    # ----------------------------------------------------
-    # Detect whether this division uses a GROUP page
-    # ----------------------------------------------------
+    print("DEBUG: Using base_url =", base_url)
+
+    # Detect group pages
     is_group_page = "group=" in base_url
 
     # ----------------------------------------------------
@@ -69,6 +68,8 @@ def scrape_division(div):
     soup = BeautifulSoup(html, "html.parser")
 
     tables = soup.find_all("table")
+
+    # ⭐ FIX: DO NOT STOP AFTER FIRST MATCHING TABLE
     for table in tables:
         headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
         if (
@@ -78,18 +79,36 @@ def scrape_division(div):
             df = parse_schedule_table(table, division_name)
             if df is not None:
                 all_days.append(df)
-            break
 
     # ----------------------------------------------------
-    # 2. If this is a GROUP page, STOP HERE
-    #    (group pages already contain ALL games)
+    # 2. If group page, STILL scrape date pages
+    #    because GotSport splits bracket tables
     # ----------------------------------------------------
     if is_group_page:
-        print(f"Group page detected ({division_name}) — skipping date pages.")
+        print(f"Group page detected ({division_name}) — also scraping date pages.")
+        for date in TOURNAMENT_DATES:
+            url = f"{base_url}&date={date}"
+            print("SCRAPING DATE PAGE:", url)
+            html = fetch_html(url)
+            soup = BeautifulSoup(html, "html.parser")
+
+            tables = soup.find_all("table")
+            for table in tables:
+                headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
+                if (
+                    "match #" in headers
+                    or ("time" in headers and "home" in headers and "away" in headers)
+                ):
+                    df = parse_schedule_table(table, division_name)
+                    if df is not None:
+                        all_days.append(df)
+
+            time.sleep(0.5)
+
         return pd.concat(all_days, ignore_index=True)
 
     # ----------------------------------------------------
-    # 3. Otherwise, scrape date pages (pool-only divisions)
+    # 3. Non-group pages: scrape date pages normally
     # ----------------------------------------------------
     for date in TOURNAMENT_DATES:
         url = f"{base_url}&date={date}"
