@@ -36,20 +36,6 @@ def get_page_html(url):
         browser.close()
         return html
 
-def parse_standings_table(table):
-    rows = []
-    for tr in table.find_all("tr"):
-        cells = [td.get_text(strip=True) for td in tr.find_all(["td", "th"])]
-        if cells:
-            rows.append(cells)
-
-    if len(rows) < 2:
-        return None
-
-    header = rows[0]
-    data = rows[1:]
-    return pd.DataFrame(data, columns=header)
-
 def parse_schedule_table(table):
     rows = []
     for tr in table.find_all("tr"):
@@ -74,57 +60,40 @@ def scrape_division(div):
         print(f"No tables found for {div['name']}")
         return None
 
-    standings = None
     schedule = None
 
     for table in tables:
         headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
 
-        if "team" in headers and "pts" in headers:
-            standings = parse_standings_table(table)
-
+        # GotSport schedule tables always contain these columns
         if "time" in headers and "home" in headers and "away" in headers:
             schedule = parse_schedule_table(table)
 
-    if standings is None and schedule is None:
-        print(f"No usable tables for {div['name']}")
+    if schedule is None:
+        print(f"No schedule found for {div['name']}")
         return None
 
-    # Tag division name
-    if standings is not None:
-        standings.insert(0, "Division", div["name"])
-
-    if schedule is not None:
-        schedule.insert(0, "Division", div["name"])
-
-    return standings, schedule
+    schedule.insert(0, "Division", div["name"])
+    return schedule
 
 def main():
     divisions = load_divisions()
-    all_rows = []
+    all_schedules = []
 
     for div in divisions:
         print(f"Scraping division: {div['name']} -> {div['url']}")
-        result = scrape_division(div)
-
-        if result is None:
-            continue
-
-        standings, schedule = result
-
-        if standings is not None:
-            all_rows.append(standings)
+        schedule = scrape_division(div)
 
         if schedule is not None:
-            all_rows.append(schedule)
+            all_schedules.append(schedule)
 
         time.sleep(1)
 
-    if not all_rows:
-        print("No data scraped.")
+    if not all_schedules:
+        print("No schedules scraped.")
         return
 
-    final_df = pd.concat(all_rows, ignore_index=True)
+    final_df = pd.concat(all_schedules, ignore_index=True)
     final_df.to_csv("gotsport_raw.csv", index=False)
     print("Saved gotsport_raw.csv")
 
