@@ -4,9 +4,20 @@ import re
 import json
 from config import TOURNAMENT_LANDING_URL
 
+import os
+HEADLESS = os.getenv("GITHUB_ACTIONS") == "true"
+
 def discover_event_and_age_gender_pages():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(
+            headless=HEADLESS,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+            ],
+        )
+
         page = browser.new_page()
         page.goto(TOURNAMENT_LANDING_URL, timeout=60000)
         html = page.content()
