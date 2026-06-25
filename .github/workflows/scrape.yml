@@ -22,9 +22,6 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium
 
-      - name: Discover division group URLs
-        run: python discover_divisions.py
-
       - name: Scrape division schedules
         run: python scrape_gotsport.py
 
