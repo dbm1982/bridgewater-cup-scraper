@@ -1,32 +1,27 @@
 import pandas as pd
+import regex as re
 from datetime import datetime
 
+def normalize_unicode_spaces(s):
+    if not isinstance(s, str):
+        return s
+    # Replace ALL unicode whitespace with normal spaces
+    return re.sub(r"\p{Z}+", " ", s)
+
 def normalize_time(row):
-    """
-    Convert 'Jun 27, 2026 8:00AM EDT' → '2026-06-27T08:00:00-04:00'
-    """
     raw = row["Time"].replace("\n", " ").strip()
-
-    # Parse the GotSport format
     dt = datetime.strptime(raw, "%b %d, %Y %I:%M%p EDT")
-
-    # EDT = UTC-4
     return dt.strftime("%Y-%m-%dT%H:%M:%S-04:00")
 
 def main():
     df = pd.read_csv("gotsport_raw.csv")
 
-    # ---------------------------------------------------------
-    # FIX: pandas 3.0 removed applymap()
-    # Normalize unicode whitespace column-by-column
-    # ---------------------------------------------------------
+    # Normalize unicode whitespace
     for col in df.columns:
         if df[col].dtype == "object":
-            df[col] = df[col].map(
-                lambda x: x.replace("\u00A0", " ") if isinstance(x, str) else x
-            )
+            df[col] = df[col].map(normalize_unicode_spaces)
 
-    # Clean whitespace for string columns only
+    # Collapse normal whitespace
     for col in df.columns:
         if df[col].dtype == "object":
             df[col] = (
@@ -36,19 +31,7 @@ def main():
                 .str.strip()
             )
 
-    # Normalize datetime
     df["datetime"] = df.apply(normalize_time, axis=1)
-
-    # Clean team names (Bracket-safe)
-    if "Home Team" in df.columns:
-        df["Home Team"] = df["Home Team"].astype(str).str.strip()
-
-    if "Away Team" in df.columns:
-        df["Away Team"] = df["Away Team"].astype(str).str.strip()
-
-    # Clean location
-    if "Location" in df.columns:
-        df["Location"] = df["Location"].astype(str).str.strip()
 
     # Final column order
     keep_cols = [
@@ -62,7 +45,6 @@ def main():
     ]
 
     keep_cols = [c for c in keep_cols if c in df.columns]
-
     final = df[keep_cols]
 
     final.to_csv("gotsport_normalized.csv", index=False)
