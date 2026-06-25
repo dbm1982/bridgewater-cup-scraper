@@ -2,7 +2,7 @@ name: Scrape Bridgewater Cup
 
 on:
   schedule:
-    - cron: "0 * * * *"   # Runs every hour
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 permissions:
