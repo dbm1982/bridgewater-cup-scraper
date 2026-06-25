@@ -1,5 +1,9 @@
 name: Scrape Bridgewater Cup
 
+defaults:
+  run:
+    working-directory: bridgewater-cup-scraper
+
 on:
   schedule:
     - cron: "0 * * * *"   # every hour
@@ -35,6 +39,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add event_meta.json division_meta.json gotsport_raw.csv gotsport_normalized.csv bridgewater_cup_all.ics calendars/*.ics
+          git add division_meta.json gotsport_raw.csv gotsport_normalized.csv bridgewater_cup_all.ics calendars/*.ics
           git commit -m "Auto-update Bridgewater Cup calendars" || echo "No changes"
           git push
