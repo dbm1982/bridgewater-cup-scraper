@@ -2,8 +2,11 @@ name: Scrape Bridgewater Cup
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"   # Runs every hour
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   scrape:
@@ -11,6 +14,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Install Python
         uses: actions/setup-python@v4
@@ -33,8 +39,8 @@ jobs:
 
       - name: Commit results
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add division_meta.json gotsport_raw.csv gotsport_normalized.csv bridgewater_cup_all.ics calendars/*.ics
-          git commit -m "Auto-update Bridgewater Cup calendars" || echo "No changes"
+          git commit -m "Auto-update Bridgewater Cup calendars" || echo "No changes to commit"
           git push
