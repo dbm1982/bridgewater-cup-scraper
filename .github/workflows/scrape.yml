@@ -22,9 +22,6 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium
 
-      - name: Discover event and age/gender pages
-        run: python discover_event.py
-
       - name: Discover division group URLs
         run: python discover_divisions.py
 
