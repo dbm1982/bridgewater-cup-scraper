@@ -1,42 +1,27 @@
 import json
 import time
 import pandas as pd
+import requests
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
-
-HEADLESS = True
 
 def load_divisions():
     with open("division_meta.json") as f:
         return json.load(f)["divisions"]
 
-def get_page_html(url):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=HEADLESS,
-            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
+def fetch_html(url):
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/123.0.0.0 Safari/537.36"
         )
-        context = browser.new_context(
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/123.0.0.0 Safari/537.36"
-            ),
-            viewport={"width": 1400, "height": 900},
-            java_script_enabled=True,
-        )
-        page = context.new_page()
-        page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+    }
+    print(f"Fetching: {url}")
+    r = requests.get(url, headers=headers, timeout=30)
+    r.raise_for_status()
+    return r.text
 
-        print(f"Loading: {url}")
-        page.goto(url, timeout=60000)
-        page.wait_for_load_state("networkidle", timeout=60000)
-        html = page.content()
-
-        browser.close()
-        return html
-
-def parse_schedule_table(table):
+def parse_schedule_table(table, division_name):
     rows = []
     for tr in table.find_all("tr"):
         cells = [td.get_text(" ", strip=True) for td in tr.find_all(["td", "th"])]
@@ -48,11 +33,13 @@ def parse_schedule_table(table):
 
     header = rows[0]
     data = rows[1:]
-    return pd.DataFrame(data, columns=header)
+
+    df = pd.DataFrame(data, columns=header)
+    df.insert(0, "Division", division_name)
+    return df
 
 def scrape_division(div):
-    url = div["url"]
-    html = get_page_html(url)
+    html = fetch_html(div["url"])
     soup = BeautifulSoup(html, "html.parser")
 
     tables = soup.find_all("table")
@@ -60,33 +47,30 @@ def scrape_division(div):
         print(f"No tables found for {div['name']}")
         return None
 
-    schedule = None
-
     for table in tables:
         headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
 
-        # GotSport schedule tables always contain these columns
-        if "time" in headers and "home" in headers and "away" in headers:
-            schedule = parse_schedule_table(table)
+        # GotSport schedule table signature
+        if (
+            "match #" in headers
+            or "time" in headers
+            and "home" in headers
+            and "away" in headers
+        ):
+            return parse_schedule_table(table, div["name"])
 
-    if schedule is None:
-        print(f"No schedule found for {div['name']}")
-        return None
-
-    schedule.insert(0, "Division", div["name"])
-    return schedule
+    print(f"No schedule found for {div['name']}")
+    return None
 
 def main():
     divisions = load_divisions()
     all_schedules = []
 
     for div in divisions:
-        print(f"Scraping division: {div['name']} -> {div['url']}")
-        schedule = scrape_division(div)
-
-        if schedule is not None:
-            all_schedules.append(schedule)
-
+        print(f"Scraping division: {div['name']}")
+        df = scrape_division(div)
+        if df is not None:
+            all_schedules.append(df)
         time.sleep(1)
 
     if not all_schedules:
