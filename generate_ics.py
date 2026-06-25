@@ -72,9 +72,18 @@ def main():
 
         event = make_event(row, last_updated)
 
-        # Add to both teams
+        # Always add to both teams
         team_cals[division][home].events.add(event)
         team_cals[division][away].events.add(event)
+
+        # ------------------------------------------------
+        # ⭐ NEW: Add bracket games to ALL REAL TEAMS
+        # ------------------------------------------------
+        if "bracket" in home.lower() or "bracket" in away.lower():
+            for t in team_cals[division].keys():
+                # Skip bracket placeholder teams
+                if not t.lower().startswith("bracket"):
+                    team_cals[division][t].events.add(event)
 
     # Write team ICS files
     for division, teams in team_cals.items():
