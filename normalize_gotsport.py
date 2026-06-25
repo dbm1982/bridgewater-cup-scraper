@@ -16,52 +16,32 @@ def normalize_time(row):
 def main():
     df = pd.read_csv("gotsport_raw.csv")
 
-    # Clean whitespace for string columns only (pandas 3.0-safe)
+    # Fix unicode whitespace (critical!)
+    df = df.applymap(lambda x: x.replace("\u00A0", " ") if isinstance(x, str) else x)
+
+    # Clean whitespace for string columns only
     for col in df.columns:
         if df[col].dtype == "object":
-            df[col] = df[col].astype(str).str.replace(r"\s+", " ", regex=True).str.strip()
+            df[col] = (
+                df[col]
+                .astype(str)
+                .str.replace(r"\s+", " ", regex=True)
+                .str.strip()
+            )
 
     # Normalize datetime
     df["datetime"] = df.apply(normalize_time, axis=1)
 
-    # ---------------------------------------------------------
-    # TEAM NAME CLEANING (Bracket-safe)
-    # ---------------------------------------------------------
-    # We DO want to collapse weird whitespace, but we DO NOT want
-    # to strip out the word "Bracket" or merge it incorrectly.
-    #
-    # Example:
-    #   "Bracket A" → keep
-    #   "Bracket   A" → collapse to "Bracket A"
-    #   "BracketA" → keep as-is
-    #
-    # This preserves all Bracket teams.
-    # ---------------------------------------------------------
-
+    # Clean team names (Bracket-safe)
     if "Home Team" in df.columns:
-        df["Home Team"] = (
-            df["Home Team"]
-            .astype(str)
-            .str.replace(r"\s+", " ", regex=True)
-            .str.strip()
-        )
+        df["Home Team"] = df["Home Team"].astype(str).str.strip()
 
     if "Away Team" in df.columns:
-        df["Away Team"] = (
-            df["Away Team"]
-            .astype(str)
-            .str.replace(r"\s+", " ", regex=True)
-            .str.strip()
-        )
+        df["Away Team"] = df["Away Team"].astype(str).str.strip()
 
     # Clean location
     if "Location" in df.columns:
-        df["Location"] = (
-            df["Location"]
-            .astype(str)
-            .str.replace(r"\s+", " ", regex=True)
-            .str.strip()
-        )
+        df["Location"] = df["Location"].astype(str).str.strip()
 
     # Final column order
     keep_cols = [
@@ -74,7 +54,6 @@ def main():
         "Location",
     ]
 
-    # Only keep columns that actually exist
     keep_cols = [c for c in keep_cols if c in df.columns]
 
     final = df[keep_cols]
