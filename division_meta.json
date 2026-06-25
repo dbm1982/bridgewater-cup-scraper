@@ -1,10 +1,6 @@
 {
   "divisions": [
     {
-      "name": "BU8 Red",
-      "url": "https://system.gotsport.com/org_event/events/52266/schedules?group=474426"
-    },
-    {
       "name": "BU8 White",
       "url": "https://system.gotsport.com/org_event/events/52266/schedules?group=474425"
     },
@@ -19,6 +15,10 @@
     {
       "name": "GU12 White",
       "url": "https://system.gotsport.com/org_event/events/52266/schedules?group=474435"
+    },
+    {
+      "name": "BU10 Red",
+      "url": "https://system.gotsport.com/org_event/events/52266/schedules?group=474430"
     }
   ]
 }
