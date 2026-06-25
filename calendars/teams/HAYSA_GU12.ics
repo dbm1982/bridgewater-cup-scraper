@@ -2,24 +2,24 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 12\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 12\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
 LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
 DTSTART:20260627T131000Z
 SUMMARY:Rockland Bulldogs vs HAYSA
-UID:9815df1d-4de6-437c-8152-970b61ba5f69@9815.org
+UID:25a852d3-070f-45cf-a1d9-7d1da0219a8a@25a8.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 14\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
-LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
-DTSTART:20260627T153000Z
-SUMMARY:HAYSA vs Wolfpack FC
-UID:2fa3f51c-e4a9-45d3-bfec-f30dcb490077@2fa3.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 16\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 16\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
 LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
 DTSTART:20260628T131000Z
 SUMMARY:HAYSA vs BYSA U12 Team Black
-UID:76ceb3a8-067f-4b4b-8ed8-425e90cbb7c1@76ce.org
+UID:9cc5e023-17cb-48bf-9e1d-0abd7c32d268@9cc5.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 14\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
+DTSTART:20260627T153000Z
+SUMMARY:HAYSA vs Wolfpack FC
+UID:13fb0de2-a4b5-434e-87cf-8aa456cb238c@13fb.org
 END:VEVENT
 END:VCALENDAR

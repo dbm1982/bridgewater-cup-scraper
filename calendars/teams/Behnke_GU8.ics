@@ -2,31 +2,52 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 173\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T164000Z
-SUMMARY:Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:3c1b0fa9-b60b-4893-b00a-25369965af4c@3c1b.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 177\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T131000Z
-SUMMARY:HAYSA Lady Bulldogs vs Behnke
-UID:c760f014-5962-4184-9370-1b8f323692ef@c760.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 182\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 182\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260628T175000Z
 SUMMARY:Behnke vs Lincoln
-UID:41bc4c34-d1ae-4988-ad91-b392a4d029d1@41bc.org
+UID:8034b65e-62c7-4fe1-ae6a-b09fa47d3c69@8034.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 185\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 186\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260628T223000Z
+SUMMARY:HAYSA Lady Bulldogs vs Carver 2nd
+UID:563f68f2-871e-40e1-924d-21184b8ac0d3@563f.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 177\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T131000Z
+SUMMARY:HAYSA Lady Bulldogs vs Behnke
+UID:474eff4b-2f56-4441-92fb-4bc261c1512c@474e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 173\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T164000Z
+SUMMARY:Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:c63c97e0-37e1-4809-8220-3517a9592499@c63c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 175\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T175000Z
+SUMMARY:Raynham vs HAYSA Lady Bulldogs
+UID:add42bb8-46b1-4846-a983-5597fddb9e2a@add4.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 180\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T175000Z
+SUMMARY:Whitman Hanson Pink Panthers vs HAYSA Lady Bulldogs
+UID:1b2c2cee-e517-4b2d-a774-8e1194e919f0@1b2c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 185\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260628T212000Z
 SUMMARY:Raynham vs Behnke
-UID:00929f4e-ffc9-40bb-ad54-df37604a7df9@0092.org
+UID:ad9f7ec2-7922-4a1c-81a1-da1fa3f46279@ad9f.org
 END:VEVENT
 END:VCALENDAR

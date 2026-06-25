@@ -2,31 +2,59 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 97\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 92\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
+DTSTART:20260627T190000Z
+SUMMARY:HAYSA squad vs Acushnet Youth Soccer Acushnet FC (Araujo)
+UID:4da95dcc-0354-4bbd-bb54-41a71db9e6dd@4da9.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 97\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260628T131000Z
 SUMMARY:Attleboro Spartans vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:6c0576e4-ea7f-4f63-ae71-7d34ee4b03e6@6c05.org
+UID:5c83500f-0d17-46b0-ba72-44178ca7f886@5c83.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 102\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 100\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260628T153000Z
+SUMMARY:Bridgewater United vs HAYSA squad
+UID:08304f4b-391d-4764-ba37-fe2df2165758@0830.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 102\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260628T164000Z
 SUMMARY:Acushnet Youth Soccer Acushnet FC (Araujo) vs Attleboro Spartans
-UID:374865f0-3761-45c4-90f3-32e874a6bf1f@3748.org
+UID:e394d67c-e96b-4177-913d-369289ea3e7f@e394.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 95\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
-LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
-DTSTART:20260627T223000Z
-SUMMARY:Attleboro Spartans vs Bridgewater United
-UID:ca67587e-ae26-4049-a00b-40396cc964fe@ca67.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 93\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 93\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260627T190000Z
 SUMMARY:Attleboro Spartans vs Braintree Wamps
-UID:cc5b6ba3-147f-4d18-870b-911d01154b0c@cc5b.org
+UID:1d2e89c4-a904-4fb0-a96f-978c39e73d25@1d2e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 94\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260627T212000Z
+SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs HAYSA squad
+UID:b7a0dbd4-aaca-4990-89ce-4e5570a9232f@b7a0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 95\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
+DTSTART:20260627T223000Z
+SUMMARY:Attleboro Spartans vs Bridgewater United
+UID:946d2035-4b28-469b-94c6-f2b5c1f311d5@946d.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 98\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:22 PM)
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260628T120000Z
+SUMMARY:HAYSA squad vs Braintree Wamps
+UID:aef431e2-2c4f-4557-a7f4-97f118a6c2e6@aef4.org
 END:VEVENT
 END:VCALENDAR
