@@ -4,6 +4,12 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
+TOURNAMENT_DATES = [
+    "2026-06-26",
+    "2026-06-27",
+    "2026-06-28",
+]
+
 def load_divisions():
     with open("division_meta.json") as f:
         return json.load(f)["divisions"]
@@ -36,39 +42,46 @@ def parse_schedule_table(table, division_name):
 
     df = pd.DataFrame(data, columns=header)
 
-    # Only add Division column if it doesn't already exist
-    if "Division" not in df.columns:
-        df.insert(0, "Division", division_name)
-    else:
-        # Overwrite existing Division column with correct division name
-        df["Division"] = division_name
+    # Ensure Division column is correct
+    df.insert(0, "Division", division_name)
 
     return df
 
-
 def scrape_division(div):
-    html = fetch_html(div["url"])
-    soup = BeautifulSoup(html, "html.parser")
+    all_days = []
 
-    tables = soup.find_all("table")
-    if not tables:
-        print(f"No tables found for {div['name']}")
+    base_url = div["url"]
+
+    # Scrape all tournament days
+    for date in TOURNAMENT_DATES:
+        url = f"{base_url}&date={date}"
+        html = fetch_html(url)
+        soup = BeautifulSoup(html, "html.parser")
+
+        tables = soup.find_all("table")
+        if not tables:
+            print(f"No tables found for {div['name']} on {date}")
+            continue
+
+        for table in tables:
+            headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
+
+            if (
+                "match #" in headers
+                or ("time" in headers and "home" in headers and "away" in headers)
+            ):
+                df = parse_schedule_table(table, div["name"])
+                if df is not None:
+                    all_days.append(df)
+                break  # Found the schedule table for this date
+
+        time.sleep(0.5)
+
+    if not all_days:
+        print(f"No schedules found for {div['name']}")
         return None
 
-    for table in tables:
-        headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
-
-        # GotSport schedule table signature
-        if (
-            "match #" in headers
-            or "time" in headers
-            and "home" in headers
-            and "away" in headers
-        ):
-            return parse_schedule_table(table, div["name"])
-
-    print(f"No schedule found for {div['name']}")
-    return None
+    return pd.concat(all_days, ignore_index=True)
 
 def main():
     divisions = load_divisions()
