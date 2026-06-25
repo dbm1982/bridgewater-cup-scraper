@@ -42,7 +42,6 @@ def parse_schedule_table(table, division_name):
 
     df = pd.DataFrame(data, columns=header)
 
-    # Fix: Only insert Division if missing
     if "Division" not in df.columns:
         df.insert(0, "Division", division_name)
     else:
@@ -50,26 +49,39 @@ def parse_schedule_table(table, division_name):
 
     return df
 
-
 def scrape_division(div):
     all_days = []
-
     base_url = div["url"]
 
-    # Scrape all tournament days
+    # ----------------------------------------------------
+    # 1. SCRAPE FULL BRACKET/DIVISION PAGE (NO DATE FILTER)
+    # ----------------------------------------------------
+    html = fetch_html(base_url)
+    soup = BeautifulSoup(html, "html.parser")
+
+    tables = soup.find_all("table")
+    for table in tables:
+        headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
+        if (
+            "match #" in headers
+            or ("time" in headers and "home" in headers and "away" in headers)
+        ):
+            df = parse_schedule_table(table, div["name"])
+            if df is not None:
+                all_days.append(df)
+            break
+
+    # ----------------------------------------------------
+    # 2. SCRAPE EACH DATE PAGE (POOL GAMES)
+    # ----------------------------------------------------
     for date in TOURNAMENT_DATES:
         url = f"{base_url}&date={date}"
         html = fetch_html(url)
         soup = BeautifulSoup(html, "html.parser")
 
         tables = soup.find_all("table")
-        if not tables:
-            print(f"No tables found for {div['name']} on {date}")
-            continue
-
         for table in tables:
             headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
-
             if (
                 "match #" in headers
                 or ("time" in headers and "home" in headers and "away" in headers)
@@ -77,7 +89,7 @@ def scrape_division(div):
                 df = parse_schedule_table(table, div["name"])
                 if df is not None:
                     all_days.append(df)
-                break  # Found the schedule table for this date
+                break
 
         time.sleep(0.5)
 
