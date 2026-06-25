@@ -1,5 +1,8 @@
 import pandas as pd
 from ics import Calendar, Event
+import os
+os.makedirs("calendars", exist_ok=True)
+
 
 def main():
     df = pd.read_csv("gotsport_normalized.csv")
