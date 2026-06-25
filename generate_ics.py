@@ -1,65 +1,63 @@
-from ics import Calendar, Event
 import pandas as pd
-from datetime import timedelta
-import os
+from ics import Calendar, Event
 
-FILTER_KEYWORDS = ["haysa", "bulldogs", "hola", "bracket"]
+def main():
+    df = pd.read_csv("gotsport_normalized.csv")
 
-def safe(s):
-    return (
-        str(s)
-        .replace(" ", "_")
-        .replace("/", "_")
-        .replace("-", "_")
-        .replace("__", "_")
-    )
+    # Normalize column names (strip whitespace)
+    df.columns = [c.strip() for c in df.columns]
 
-def match_filter(event_name):
-    name = event_name.lower()
-    return any(keyword in name for keyword in FILTER_KEYWORDS)
+    # Required columns
+    required = ["Division", "datetime", "Home Team", "Away Team", "Location"]
+    for col in required:
+        if col not in df.columns:
+            raise ValueError(f"Missing required column: {col}")
 
-df = pd.read_csv("gotsport_normalized.csv")
+    # Create one ICS per division
+    divisions = df["Division"].unique()
 
-master_cal = Calendar()
-division_cals = {}
+    for div in divisions:
+        cal = Calendar()
+        subset = df[df["Division"] == div]
 
-for _, row in df.iterrows():
-    div = row["division"]
-    if div not in division_cals:
-        division_cals[div] = Calendar()
+        for _, row in subset.iterrows():
+            event = Event()
 
-    event = Event()
-    event.name = f"{row['home_team']} vs {row['away_team']} ({row['division']})"
-    event.begin = row["datetime"]
-    event.duration = timedelta(hours=1)  # adjust if needed
-    event.location = row["Location"]
-    event.uid = f"match-{row['match_id']}@bridgewatercup"
+            # Title: Home vs Away
+            event.name = f"{row['Home Team']} vs {row['Away Team']}"
 
-    master_cal.events.add(event)
-    division_cals[div].events.add(event)
+            # Start time
+            event.begin = row["datetime"]
 
-with open("bridgewater_cup_all.ics", "w") as f:
-    f.writelines(master_cal)
+            # Location
+            event.location = row["Location"]
 
-os.makedirs("calendars", exist_ok=True)
+            # Description
+            event.description = f"Division: {div}"
 
-for div, cal in division_cals.items():
-    safe_div = safe(div)
+            cal.events.add(event)
 
-    # Full division ICS
-    full_path = f"calendars/{safe_div}.ics"
-    with open(full_path, "w") as f:
-        f.writelines(cal)
+        # Save file
+        filename = f"calendars/{div.replace(' ', '_')}.ics"
+        with open(filename, "w") as f:
+            f.writelines(cal)
 
-    # Filtered ICS (HAYSA / Bulldogs / HOLA / Bracket)
-    filtered = Calendar()
-    for event in cal.events:
-        if match_filter(event.name):
-            filtered.events.add(event)
+        print(f"Saved {filename}")
 
-    if len(filtered.events) > 0:
-        filtered_path = f"calendars/{safe_div}_filtered.ics"
-        with open(filtered_path, "w") as f:
-            f.writelines(filtered)
+    # Combined ICS
+    full = Calendar()
+    for _, row in df.iterrows():
+        event = Event()
+        event.name = f"{row['Home Team']} vs {row['Away Team']}"
+        event.begin = row["datetime"]
+        event.location = row["Location"]
+        event.description = f"Division: {row['Division']}"
+        full.events.add(event)
 
-print("ICS generation complete.")
+    with open("bridgewater_cup_all.ics", "w") as f:
+        f.writelines(full)
+
+    print("Saved bridgewater_cup_all.ics")
+
+if __name__ == "__main__":
+    main()
