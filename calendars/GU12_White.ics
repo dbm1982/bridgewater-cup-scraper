@@ -2,31 +2,31 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Division: GU12 White
-LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
-DTSTART:20260627T131000Z
-SUMMARY:Wolfpack FC vs BYSA U12 Team Black
-UID:e4349dd1-ac3f-481e-8e91-b2fb0144830b@e434.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU12 White
-LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
-DTSTART:20260627T131000Z
-SUMMARY:Rockland Bulldogs vs HAYSA
-UID:4b48a0d8-d4dd-44fe-9759-08771bb659e9@4b48.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU12 White
-LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
-DTSTART:20260627T153000Z
-SUMMARY:BYSA U12 Team Black vs Rockland Bulldogs
-UID:4ad06647-a8c5-4bbd-b4e3-0a78d76d0217@4ad0.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU12 White
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: \nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:35 PM)
 LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
 DTSTART:20260627T153000Z
 SUMMARY:HAYSA vs Wolfpack FC
-UID:250f2fce-80a3-4895-a085-9975d225c8be@250f.org
+UID:314f99ed-da05-4eb3-89c8-6d635e9fc74d@314f.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 9v9\nGame #: \nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:35 PM)
+LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
+DTSTART:20260627T131000Z
+SUMMARY:Wolfpack FC vs BYSA U12 Team Black
+UID:de86a1f0-1557-4d5d-b2cd-373cc06d30e2@de86.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: \nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:35 PM)
+LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
+DTSTART:20260627T131000Z
+SUMMARY:Rockland Bulldogs vs HAYSA
+UID:fe17a46c-7915-45ea-ad60-9f8ad2d804c9@fe17.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 9v9\nGame #: \nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:35 PM)
+LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
+DTSTART:20260627T153000Z
+SUMMARY:BYSA U12 Team Black vs Rockland Bulldogs
+UID:741f73c3-ee0f-42dc-81d1-88aeb79301a8@741f.org
 END:VEVENT
 END:VCALENDAR
