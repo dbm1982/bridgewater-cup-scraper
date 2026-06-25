@@ -1,12 +1,18 @@
 import pandas as pd
-import regex as re
+import unicodedata
 from datetime import datetime
 
 def normalize_unicode_spaces(s):
     if not isinstance(s, str):
         return s
-    # Replace ALL unicode whitespace with normal spaces
-    return re.sub(r"\p{Z}+", " ", s)
+
+    # Normalize unicode (NFKC converts weird spaces to normal ones)
+    s = unicodedata.normalize("NFKC", s)
+
+    # Replace any remaining unicode whitespace with normal spaces
+    cleaned = "".join(" " if unicodedata.category(c) == "Zs" else c for c in s)
+
+    return cleaned
 
 def normalize_time(row):
     raw = row["Time"].replace("\n", " ").strip()
@@ -16,7 +22,7 @@ def normalize_time(row):
 def main():
     df = pd.read_csv("gotsport_raw.csv")
 
-    # Normalize unicode whitespace
+    # Normalize unicode whitespace column-by-column
     for col in df.columns:
         if df[col].dtype == "object":
             df[col] = df[col].map(normalize_unicode_spaces)
@@ -33,7 +39,6 @@ def main():
 
     df["datetime"] = df.apply(normalize_time, axis=1)
 
-    # Final column order
     keep_cols = [
         "Division",
         "Match #",
