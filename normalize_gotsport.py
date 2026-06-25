@@ -1,13 +1,18 @@
 import pandas as pd
 
+from datetime import datetime
+
 def normalize_time(row):
     """
-    Combine the date and time fields into a single datetime string.
-    GotSport usually formats Time like:
-    'Jun 28, 2026 9:10AM EDT'
+    Convert 'Jun 27, 2026 8:00AM EDT' → '2026-06-27T08:00:00-04:00'
     """
-    t = row["Time"].replace("\n", " ").strip()
-    return t
+    raw = row["Time"].replace("\n", " ").strip()
+
+    # Parse the GotSport format
+    dt = datetime.strptime(raw, "%b %d, %Y %I:%M%p EDT")
+
+    # EDT = UTC-4
+    return dt.strftime("%Y-%m-%dT%H:%M:%S-04:00")
 
 def main():
     df = pd.read_csv("gotsport_raw.csv")
