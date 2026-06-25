@@ -3,6 +3,7 @@ from ics import Calendar, Event
 import os
 from collections import defaultdict
 from datetime import datetime
+from datetime import timedelta
 from zoneinfo import ZoneInfo
 
 def parse_dt(dt_str):
@@ -20,6 +21,7 @@ def make_event(row, last_updated):
     event = Event()
     event.name = f"({agegroup}) {row['Home Team']} vs {row['Away Team']}"
     event.begin = parse_dt(row["datetime"])
+    event.end = event.begin + timedelta(minutes=55)
     event.location = row["Location"]
 
     game_number = row.get("Match #", "")
