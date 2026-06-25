@@ -1,10 +1,13 @@
 import pandas as pd
 from ics import Calendar, Event
 import os
-os.makedirs("calendars", exist_ok=True)
-
+from collections import defaultdict
 
 def main():
+    # Ensure folders exist
+    os.makedirs("calendars", exist_ok=True)
+    os.makedirs("calendars/teams", exist_ok=True)
+
     df = pd.read_csv("gotsport_normalized.csv")
 
     # Normalize column names (strip whitespace)
@@ -16,7 +19,9 @@ def main():
         if col not in df.columns:
             raise ValueError(f"Missing required column: {col}")
 
-    # Create one ICS per division
+    # -----------------------------------------
+    # DIVISION ICS GENERATION
+    # -----------------------------------------
     divisions = df["Division"].unique()
 
     for div in divisions:
@@ -25,30 +30,48 @@ def main():
 
         for _, row in subset.iterrows():
             event = Event()
-
-            # Title: Home vs Away
             event.name = f"{row['Home Team']} vs {row['Away Team']}"
-
-            # Start time
             event.begin = row["datetime"]
-
-            # Location
             event.location = row["Location"]
-
-            # Description
             event.description = f"Division: {div}"
-
             cal.events.add(event)
 
-        # Save file
         filename = f"calendars/{div.replace(' ', '_')}.ics"
         with open(filename, "w") as f:
             f.writelines(cal)
 
         print(f"Saved {filename}")
 
-    # Combined ICS
+    # -----------------------------------------
+    # PER-TEAM ICS GENERATION
+    # -----------------------------------------
+    team_cals = defaultdict(Calendar)
+
+    for _, row in df.iterrows():
+        home = row["Home Team"]
+        away = row["Away Team"]
+
+        event = Event()
+        event.name = f"{home} vs {away}"
+        event.begin = row["datetime"]
+        event.location = row["Location"]
+        event.description = f"Division: {row['Division']}"
+
+        team_cals[home].events.add(event)
+        team_cals[away].events.add(event)
+
+    for team, cal in team_cals.items():
+        safe = team.replace(" ", "_").replace("/", "_")
+        filename = f"calendars/teams/{safe}.ics"
+        with open(filename, "w") as f:
+            f.writelines(cal)
+        print(f"Saved {filename}")
+
+    # -----------------------------------------
+    # COMBINED ICS (ALL GAMES)
+    # -----------------------------------------
     full = Calendar()
+
     for _, row in df.iterrows():
         event = Event()
         event.name = f"{row['Home Team']} vs {row['Away Team']}"
