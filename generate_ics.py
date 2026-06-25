@@ -55,8 +55,8 @@ def main():
     team_cals = defaultdict(Calendar)
 
     for _, row in df.iterrows():
-        home = row["Home Team"]
-        away = row["Away Team"]
+        home = row["Home Team"].strip()
+        away = row["Away Team"].strip()
 
         # Normalize bracket teams
         if "Bracket" in home:
@@ -83,11 +83,9 @@ def main():
 
     for team, cal in team_cals.items():
 
-        # Skip teams with zero events
         if len(cal.events) == 0:
             continue
 
-        # Find a row for this team to determine division
         sample = df[(df["Home Team"] == team) | (df["Away Team"] == team)]
         if sample.empty:
             continue
