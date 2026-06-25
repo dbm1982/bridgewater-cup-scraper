@@ -3,6 +3,10 @@ from bs4 import BeautifulSoup
 import json
 import re
 
+import os
+HEADLESS = os.getenv("GITHUB_ACTIONS") == "true"
+
+
 def discover_division_groups():
     with open("event_meta.json") as f:
         meta = json.load(f)
@@ -11,7 +15,15 @@ def discover_division_groups():
     divisions = []
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(
+            headless=HEADLESS,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+            ],
+        )
+
         context = browser.new_context(
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
