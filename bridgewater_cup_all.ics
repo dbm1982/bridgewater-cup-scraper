@@ -2,178 +2,178 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Division: GU10 Blue
-LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
-DTSTART:20260627T142000Z
-SUMMARY:HOLA 4.3(Mills) vs East bridgewater
-UID:d0741e96-0bec-4189-868f-d8c920844479@d074.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU10 Blue
-LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
-DTSTART:20260627T120000Z
-SUMMARY:East bridgewater vs Abington McLoughlin GU10
-UID:26b1d9e7-be78-4c94-8fbe-8d0c7f56d4e6@26b1.org
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Division: GU8 White
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T131000Z
-SUMMARY:HAYSA Lady Bulldogs vs Behnke
-UID:741c45a0-f4f1-4cae-8314-37fe4fdd737e@741c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T164000Z
-SUMMARY:Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:fca1333f-c30d-4823-bfee-bcd1b4595b51@fca1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 Red
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T142000Z
-SUMMARY:Berkley vs Barros
-UID:1c3ceaf0-bc13-4537-8b25-488fb6001260@1c3c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU12 White
-LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
-DTSTART:20260627T131000Z
-SUMMARY:Wolfpack FC vs BYSA U12 Team Black
-UID:e7ec4933-84f3-456a-b1db-d84deb1aa98f@e7ec.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 Red
-LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
-DTSTART:20260627T164000Z
-SUMMARY:Big Red Badgers vs Berkley
-UID:25ef2f44-69d3-4dfc-b730-4f6f2e4da543@25ef.org
+DTSTART:20260627T175000Z
+SUMMARY:Carver 2nd vs Lincoln
+UID:83c2c87b-8dd1-4c27-8d6c-1dae189ff8bc@83c2.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU8 White
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T223000Z
 SUMMARY:Whitman Hanson Pink Panthers vs Raynham
-UID:bb40a44f-b637-4f4f-bb26-2c6c566462a5@bb40.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 Red
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T120000Z
-SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Big Red Badgers
-UID:7689173f-169e-45eb-8b4a-6bd0ad5e5bcb@7689.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU12 White
-LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
-DTSTART:20260627T153000Z
-SUMMARY:BYSA U12 Team Black vs Rockland Bulldogs
-UID:96cbe5c8-b253-4483-a0fa-f05f4a2903dc@96cb.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T201000Z
-SUMMARY:BYSA Marsh vs Rising Stars FC Rising Stars FC U9
-UID:b4479e9b-ab65-4f62-ae2c-773f94632154@b447.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T131000Z
-SUMMARY:Lincoln vs Whitman Hanson Pink Panthers
-UID:9a56fc72-35ea-4348-9a94-4a5628ee8d04@9a56.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU12 White
-LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
-DTSTART:20260627T153000Z
-SUMMARY:HAYSA vs Wolfpack FC
-UID:9260a2b2-a6d0-41c6-8534-ac87c0be24f1@9260.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 White
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T201000Z
-SUMMARY:Weigold vs Vikings United U8
-UID:78436f33-ffb2-4790-8980-07cdbed383d5@7843.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU10 Blue
-LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
-DTSTART:20260627T142000Z
-SUMMARY:Abington McLoughlin GU10 vs BYSA - Walden
-UID:3b94a0dd-5192-4924-91f2-1cc8c1a36366@3b94.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T142000Z
-SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Carver 2nd
-UID:1f9d2c64-ea31-4ee9-81db-06f3e4d9a887@1f9d.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU8 White
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T175000Z
-SUMMARY:Carver 2nd vs Lincoln
-UID:dbcc7684-1db8-4ffe-97ec-127583176be4@dbcc.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T223000Z
-SUMMARY:Vikings United U8 vs HAYSA
-UID:d7306652-4b31-4326-bb08-cc595c3ef16e@d730.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 Red
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T120000Z
-SUMMARY:Barros vs EBFC- U8
-UID:7ec30f7a-af1c-472d-b5ce-d18dec4ed54c@7ec3.org
+UID:fbf35f73-70d8-4452-9240-25e19c4fb98b@fbf3.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 White
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T153000Z
 SUMMARY:Rising Stars FC Rising Stars FC U9 vs Weigold
-UID:72c4a0c2-955b-4968-a65c-35fc8a7fd029@72c4.org
+UID:8c63965b-ea4e-4bf7-ac27-b26127a2cd6e@8c63.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU10 Blue
+LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
+DTSTART:20260627T142000Z
+SUMMARY:Abington McLoughlin GU10 vs BYSA - Walden
+UID:8027000f-653f-45b5-880b-3311d2314c35@8027.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 Red
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T120000Z
+SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Big Red Badgers
+UID:f327e3f3-4c7c-4b07-b2a8-dac6bdaa09be@f327.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU12 White
+LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
+DTSTART:20260627T153000Z
+SUMMARY:BYSA U12 Team Black vs Rockland Bulldogs
+UID:6919cd1a-29a6-476d-87a9-35c366ed2052@6919.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU12 White
+LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
+DTSTART:20260627T153000Z
+SUMMARY:HAYSA vs Wolfpack FC
+UID:28c49fa4-b8db-4bbf-8c49-e37b9021a0b1@28c4.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU8 White
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T131000Z
+SUMMARY:HAYSA Lady Bulldogs vs Behnke
+UID:d5e8936a-c87b-4076-a88f-4e8a98d55435@d5e8.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU12 White
 LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
 DTSTART:20260627T131000Z
 SUMMARY:Rockland Bulldogs vs HAYSA
-UID:ce72a884-3645-4150-98b9-b34d464e1e78@ce72.org
+UID:f1658d1c-36a1-4ccb-9470-3eab7edabf69@f165.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU8 White
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T164000Z
+SUMMARY:Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:16c8ff87-52f9-44a4-84c7-7af72026f01f@16c8.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 White
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T223000Z
+SUMMARY:Vikings United U8 vs HAYSA
+UID:b3feb906-2418-4238-a196-8edeffdae8cd@b3fe.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 White
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T201000Z
+SUMMARY:BYSA Marsh vs Rising Stars FC Rising Stars FC U9
+UID:865fa83d-424c-4e44-924d-c9eb22e459b4@865f.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU10 Blue
+LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
+DTSTART:20260627T120000Z
+SUMMARY:East bridgewater vs Abington McLoughlin GU10
+UID:586319d5-4af7-4f36-ad0f-eaa25be56f6f@5863.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU10 Blue
+LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
+DTSTART:20260627T142000Z
+SUMMARY:HOLA 4.3(Mills) vs East bridgewater
+UID:564284ce-f1b0-41d4-99b4-bf09d1e267ec@5642.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 Red
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T142000Z
+SUMMARY:Berkley vs Barros
+UID:f60fdd39-2935-4f5f-bdc3-5fd2c4faef72@f60f.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU8 White
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T131000Z
+SUMMARY:Lincoln vs Whitman Hanson Pink Panthers
+UID:90f6bd59-8756-4415-ba1d-61d50971fb54@90f6.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 Red
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T153000Z
 SUMMARY:EBFC- U8 vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:daa9811f-a002-4f58-855c-f91965ed55b0@daa9.org
+UID:232340e6-d844-4fd5-975e-dc18be641cdc@2323.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Division: BU8 White
+DESCRIPTION:Division: BU8 Red
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T164000Z
-SUMMARY:HAYSA vs BYSA Marsh
-UID:89b675b9-51a2-4c6e-aaf3-23b268af202e@89b6.org
+DTSTART:20260627T120000Z
+SUMMARY:Barros vs EBFC- U8
+UID:140654a1-a32c-429d-8ecd-87dc3686177e@1406.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU8 White
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T175000Z
 SUMMARY:Raynham vs HAYSA Lady Bulldogs
-UID:741cf915-81d2-4ad3-a9aa-b29f0ae5ec8d@741c.org
+UID:704e6cd2-3db2-45fe-86c1-577d86ba3e2a@704e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 Red
+LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
+DTSTART:20260627T164000Z
+SUMMARY:Big Red Badgers vs Berkley
+UID:d48cd909-73d1-4c76-8f0b-4f8536dc59e0@d48c.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU10 Blue
 LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
 DTSTART:20260627T120000Z
 SUMMARY:BYSA - Walden vs HOLA 4.3(Mills)
-UID:8006ce4b-34cd-442c-b2fe-2e1883d776bb@8006.org
+UID:8435ee34-67f9-4885-ab79-f410401344ed@8435.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU8 White
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T142000Z
+SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Carver 2nd
+UID:5430a0ae-d8a6-411f-a8ca-de3e1d55bdc5@5430.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 White
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T164000Z
+SUMMARY:HAYSA vs BYSA Marsh
+UID:595b4010-acdc-4c89-915f-b235337782e1@595b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 White
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T201000Z
+SUMMARY:Weigold vs Vikings United U8
+UID:ea0884fa-06d7-483e-9d6c-23797a0a7d8c@ea08.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU12 White
+LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
+DTSTART:20260627T131000Z
+SUMMARY:Wolfpack FC vs BYSA U12 Team Black
+UID:5f6569e2-10b5-4268-b67f-9d38cd344689@5f65.org
 END:VEVENT
 END:VCALENDAR

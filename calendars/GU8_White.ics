@@ -4,50 +4,50 @@ PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DESCRIPTION:Division: GU8 White
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T223000Z
-SUMMARY:Whitman Hanson Pink Panthers vs Raynham
-UID:a33af771-2aea-43f1-b51a-499cf87568e8@a33a.org
+DTSTART:20260627T131000Z
+SUMMARY:HAYSA Lady Bulldogs vs Behnke
+UID:e0da5722-f833-4949-a81f-957c6d0407aa@e0da.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU8 White
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T175000Z
 SUMMARY:Carver 2nd vs Lincoln
-UID:8f3983ba-a0c1-4aaa-b3a9-18368a068a08@8f39.org
+UID:69cea055-3ad4-46df-8172-cc176acf02c8@69ce.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T164000Z
-SUMMARY:Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:12734096-7d59-46e0-b05e-b7e233c670d0@1273.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T131000Z
-SUMMARY:Lincoln vs Whitman Hanson Pink Panthers
-UID:d8ef8edc-c58c-4505-9235-3fb8a499b524@d8ef.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU8 White
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T142000Z
-SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Carver 2nd
-UID:c58bb61d-c77e-4d8c-9543-1b8058b41d12@c58b.org
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T223000Z
+SUMMARY:Whitman Hanson Pink Panthers vs Raynham
+UID:fcdd7ab1-0e77-486a-91ee-ba8ee7dd223d@fcdd.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU8 White
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T175000Z
 SUMMARY:Raynham vs HAYSA Lady Bulldogs
-UID:1ea861e6-96bf-4d97-ba75-19bfe6e9cc1d@1ea8.org
+UID:0c08f13e-3564-471e-b01b-9ae9d08a7af6@0c08.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU8 White
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T164000Z
+SUMMARY:Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:b2c568d0-2e7c-4f66-8f65-451674bab3a3@b2c5.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU8 White
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T142000Z
+SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Carver 2nd
+UID:a5b767d4-6b00-4cff-9041-33cbee752386@a5b7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU8 White
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T131000Z
-SUMMARY:HAYSA Lady Bulldogs vs Behnke
-UID:be15d64d-c74e-40fe-9ee1-5c20d27da869@be15.org
+SUMMARY:Lincoln vs Whitman Hanson Pink Panthers
+UID:5310b438-5272-4860-9257-1456ae33dc2c@5310.org
 END:VEVENT
 END:VCALENDAR

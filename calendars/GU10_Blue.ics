@@ -3,30 +3,30 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DESCRIPTION:Division: GU10 Blue
+LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
+DTSTART:20260627T142000Z
+SUMMARY:HOLA 4.3(Mills) vs East bridgewater
+UID:13d14b8a-766b-4920-867e-547e1b837c43@13d1.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: GU10 Blue
 LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
 DTSTART:20260627T142000Z
 SUMMARY:Abington McLoughlin GU10 vs BYSA - Walden
-UID:ac95a559-0f36-4260-a5cc-96d0c4c5354b@ac95.org
+UID:c9c675e9-ae4f-4782-8537-5b04cfade1d0@c9c6.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU10 Blue
 LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
 DTSTART:20260627T120000Z
 SUMMARY:East bridgewater vs Abington McLoughlin GU10
-UID:a6acb97e-b952-480a-9b66-202d9d0e515b@a6ac.org
+UID:dfd241ba-cc0f-467c-8d33-11cefa4a9c27@dfd2.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: GU10 Blue
 LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
 DTSTART:20260627T120000Z
 SUMMARY:BYSA - Walden vs HOLA 4.3(Mills)
-UID:517f117f-571f-4be3-af02-ae2bd52c709a@517f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: GU10 Blue
-LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
-DTSTART:20260627T142000Z
-SUMMARY:HOLA 4.3(Mills) vs East bridgewater
-UID:f0519559-7cef-42c4-9195-35d8a79473eb@f051.org
+UID:7dbf927d-4510-4c9f-a49c-054ded8715ff@7dbf.org
 END:VEVENT
 END:VCALENDAR

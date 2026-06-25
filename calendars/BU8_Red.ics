@@ -3,37 +3,37 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 Red
-LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
-DTSTART:20260627T164000Z
-SUMMARY:Big Red Badgers vs Berkley
-UID:688e3877-1d5e-4af7-8c2d-e3d69d762f0f@688e.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 Red
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T120000Z
-SUMMARY:Barros vs EBFC- U8
-UID:5c66b433-4ac2-44f9-8522-9f7b09534bf7@5c66.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Division: BU8 Red
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T142000Z
 SUMMARY:Berkley vs Barros
-UID:e03127dc-6a83-4674-a581-01a6f984ac95@e031.org
+UID:ef7de090-5978-4a94-8eab-e8c0e8258070@ef7d.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 Red
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T120000Z
 SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Big Red Badgers
-UID:42b34d7d-43d6-4cfe-816e-731277c6bdbf@42b3.org
+UID:6ba21009-1d03-454d-87d8-c5d0515ba22c@6ba2.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 Red
+LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
+DTSTART:20260627T164000Z
+SUMMARY:Big Red Badgers vs Berkley
+UID:052a2c16-45df-47d1-96dc-893602ab4eac@052a.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Division: BU8 Red
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T153000Z
 SUMMARY:EBFC- U8 vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:ccd1949c-9cd7-43c5-be07-bf489f2972c4@ccd1.org
+UID:53de446a-1985-4a42-9544-a88adedae38e@53de.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Division: BU8 Red
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T120000Z
+SUMMARY:Barros vs EBFC- U8
+UID:2e82af9c-e8f6-4839-b999-6bda3fc95edc@2e82.org
 END:VEVENT
 END:VCALENDAR
