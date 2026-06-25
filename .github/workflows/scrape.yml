@@ -2,7 +2,7 @@ name: Scrape Bridgewater Cup
 
 on:
   schedule:
-    - cron: "0 * * * *"   # every hour
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -18,20 +18,25 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
+        working-directory: bridgewater-cup-scraper
         run: |
           pip install -r requirements.txt
           playwright install chromium
 
       - name: Scrape division schedules
+        working-directory: bridgewater-cup-scraper
         run: python scrape_gotsport.py
 
       - name: Normalize data
+        working-directory: bridgewater-cup-scraper
         run: python normalize_gotsport.py
 
       - name: Generate ICS calendars
+        working-directory: bridgewater-cup-scraper
         run: python generate_ics.py
 
       - name: Commit results
+        working-directory: bridgewater-cup-scraper
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
