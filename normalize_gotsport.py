@@ -12,15 +12,20 @@ def normalize_time(row):
 def main():
     df = pd.read_csv("gotsport_raw.csv")
 
-    # Clean whitespace
-    df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+    # Clean whitespace for string columns only (pandas 3.0-safe)
+    for col in df.columns:
+        if df[col].dtype == "object":
+            df[col] = df[col].astype(str).str.replace(r"\s+", " ", regex=True).str.strip()
 
     # Normalize datetime
     df["datetime"] = df.apply(normalize_time, axis=1)
 
     # Clean team names
-    df["Home Team"] = df["Home Team"].str.replace(r"\s+", " ", regex=True)
-    df["Away Team"] = df["Away Team"].str.replace(r"\s+", " ", regex=True)
+    if "Home Team" in df.columns:
+        df["Home Team"] = df["Home Team"].str.replace(r"\s+", " ", regex=True)
+
+    if "Away Team" in df.columns:
+        df["Away Team"] = df["Away Team"].str.replace(r"\s+", " ", regex=True)
 
     # Clean location
     if "Location" in df.columns:
