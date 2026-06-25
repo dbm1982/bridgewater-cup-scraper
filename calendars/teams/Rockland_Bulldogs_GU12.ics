@@ -2,27 +2,35 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 9v9\nGame #: 12\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:39 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 9v9\nGame #: 12\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:44 PM)
 DTEND:20260627T140500Z
 LOCATION:Flagg Street Soccer Complex - Field 6 - 9v9
 DTSTART:20260627T131000Z
 SUMMARY:(GU12) Rockland Bulldogs vs HAYSA
-UID:9977fcd4-382f-4115-a90b-833dd24d5cf0@9977.org
+UID:42ec5f0c-97fb-49bc-9195-785e0c2b2d67@42ec.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 13\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:39 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 13\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:44 PM)
 DTEND:20260627T162500Z
 LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
 DTSTART:20260627T153000Z
 SUMMARY:(GU12) BYSA U12 Team Black vs Rockland Bulldogs
-UID:2ecdc587-4fd5-4823-8d41-33126329d4fc@2ecd.org
+UID:152462f7-38a9-4459-ba6a-32fbff755ec8@1524.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 15\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:39 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 15\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:44 PM)
 DTEND:20260628T140500Z
 LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
 DTSTART:20260628T131000Z
 SUMMARY:(GU12) Wolfpack FC vs Rockland Bulldogs
-UID:1a42159b-8ad9-4167-b240-759bc434a738@1a42.org
+UID:1150e037-59dc-4dfc-961f-46794e444777@1150.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 17 Final\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:44 PM)
+DTEND:20260628T162500Z
+LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
+DTSTART:20260628T153000Z
+SUMMARY:(GU12) Bracket A #1 vs Bracket A #2
+UID:5dd71cd6-0473-4eb3-9f7a-a66b9f42d133@5dd7.org
 END:VEVENT
 END:VCALENDAR
