@@ -35,8 +35,16 @@ def parse_schedule_table(table, division_name):
     data = rows[1:]
 
     df = pd.DataFrame(data, columns=header)
-    df.insert(0, "Division", division_name)
+
+    # Only add Division column if it doesn't already exist
+    if "Division" not in df.columns:
+        df.insert(0, "Division", division_name)
+    else:
+        # Overwrite existing Division column with correct division name
+        df["Division"] = division_name
+
     return df
+
 
 def scrape_division(div):
     html = fetch_html(div["url"])
