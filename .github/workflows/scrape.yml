@@ -1,0 +1,46 @@
+name: Scrape Bridgewater Cup
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
+
+      - name: Discover event and age/gender pages
+        run: python discover_event.py
+
+      - name: Discover division group URLs
+        run: python discover_divisions.py
+
+      - name: Scrape division schedules
+        run: python scrape_gotsport.py
+
+      - name: Normalize data
+        run: python normalize_gotsport.py
+
+      - name: Generate ICS calendars
+        run: python generate_ics.py
+
+      - name: Commit results
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add event_meta.json division_meta.json gotsport_raw.csv gotsport_normalized.csv bridgewater_cup_all.ics calendars/*.ics
+          git commit -m "Auto-update Bridgewater Cup calendars" || echo "No changes"
+          git push
