@@ -1,9 +1,5 @@
 name: Scrape Bridgewater Cup
 
-defaults:
-  run:
-    working-directory: bridgewater-cup-scraper
-
 on:
   schedule:
     - cron: "0 * * * *"   # every hour
