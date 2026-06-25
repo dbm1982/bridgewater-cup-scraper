@@ -2,17 +2,31 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 93\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:45 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 97\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260627T190000Z
-SUMMARY:Attleboro Spartans vs Braintree Wamps
-UID:e624bc20-1db5-4cca-a3a6-dbcf3880d675@e624.org
+DTSTART:20260628T131000Z
+SUMMARY:Attleboro Spartans vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:6c0576e4-ea7f-4f63-ae71-7d34ee4b03e6@6c05.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 95\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:45 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 102\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260628T164000Z
+SUMMARY:Acushnet Youth Soccer Acushnet FC (Araujo) vs Attleboro Spartans
+UID:374865f0-3761-45c4-90f3-32e874a6bf1f@3748.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 95\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260627T223000Z
 SUMMARY:Attleboro Spartans vs Bridgewater United
-UID:00e0d680-656c-41ab-b079-d48dfb960471@00e0.org
+UID:ca67587e-ae26-4049-a00b-40396cc964fe@ca67.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 93\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260627T190000Z
+SUMMARY:Attleboro Spartans vs Braintree Wamps
+UID:cc5b6ba3-147f-4d18-870b-911d01154b0c@cc5b.org
 END:VEVENT
 END:VCALENDAR

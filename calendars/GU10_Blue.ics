@@ -2,31 +2,45 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 7v7\nGame #: 66\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:45 PM)
-LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
-DTSTART:20260627T142000Z
-SUMMARY:HOLA 4.3(Mills) vs East bridgewater
-UID:83794e8c-aabe-4d67-aa4b-a663997a24fb@8379.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 7v7\nGame #: 64\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:45 PM)
-LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
-DTSTART:20260627T120000Z
-SUMMARY:BYSA - Walden vs HOLA 4.3(Mills)
-UID:71b39ebf-fbe9-4e95-88ce-0422179648d5@71b3.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 7v7\nGame #: 63\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:45 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 7v7\nGame #: 63\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
 LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
 DTSTART:20260627T120000Z
 SUMMARY:East bridgewater vs Abington McLoughlin GU10
-UID:7ab7d330-dcb6-4739-bc91-3d5a9e695e05@7ab7.org
+UID:ccc55eb4-3c91-4a00-8479-1211dbcacc5b@ccc5.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 7v7\nGame #: 65\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 04:45 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 7v7\nGame #: 64\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
+DTSTART:20260627T120000Z
+SUMMARY:BYSA - Walden vs HOLA 4.3(Mills)
+UID:9dad3718-55d6-460b-b0f9-5a951e750f54@9dad.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 7v7\nGame #: 67\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
+DTSTART:20260628T190000Z
+SUMMARY:East bridgewater vs BYSA - Walden
+UID:7a2a32d8-ac1d-43b9-842d-3d5b63797912@7a2a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 7v7\nGame #: 66\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
+DTSTART:20260627T142000Z
+SUMMARY:HOLA 4.3(Mills) vs East bridgewater
+UID:0857cb17-cd0d-4caf-a647-d36b2107e7b2@0857.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 7v7\nGame #: 65\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
 LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
 DTSTART:20260627T142000Z
 SUMMARY:Abington McLoughlin GU10 vs BYSA - Walden
-UID:07a4678e-a8fd-4367-9a60-4c0537026d31@07a4.org
+UID:3b6adb66-4c33-4d44-9bf7-45bff593311b@3b6a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 7v7\nGame #: 68\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:03 PM)
+LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
+DTSTART:20260628T190000Z
+SUMMARY:HOLA 4.3(Mills) vs Abington McLoughlin GU10
+UID:594adb38-51ec-41cd-8ed4-5ad2b21048ed@594a.org
 END:VEVENT
 END:VCALENDAR
