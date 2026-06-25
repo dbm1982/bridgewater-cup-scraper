@@ -1,17 +1,13 @@
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import json
-import re
-
 import os
+
 HEADLESS = os.getenv("GITHUB_ACTIONS") == "true"
 
+EVENT_URL = "https://system.gotsport.com/org_event/events/52266"
 
 def discover_division_groups():
-    with open("event_meta.json") as f:
-        meta = json.load(f)
-
-    age_gender_urls = meta["age_gender_urls"]
     divisions = []
 
     with sync_playwright() as p:
@@ -38,37 +34,36 @@ def discover_division_groups():
             "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
         )
 
-        for url in age_gender_urls:
-            print(f"Scanning age/gender page: {url}")
-            page.goto(url, timeout=60000)
-            page.wait_for_load_state("networkidle", timeout=60000)
-            html = page.content()
-
-            soup = BeautifulSoup(html, "html.parser")
-            links = soup.find_all("a", href=True)
-
-            for a in links:
-                href = a["href"]
-                if "schedules?group=" in href:
-                    full_url = href if href.startswith("http") else "https://system.gotsport.com" + href
-                    name = a.get_text(strip=True)
-                    divisions.append({"name": name, "url": full_url})
+        print(f"Scanning event page: {EVENT_URL}")
+        page.goto(EVENT_URL, timeout=60000)
+        page.wait_for_load_state("networkidle", timeout=60000)
+        html = page.content()
 
         browser.close()
 
-    # Deduplicate by URL
+    soup = BeautifulSoup(html, "html.parser")
+    links = soup.find_all("a", href=True)
+
+    for a in links:
+        href = a["href"]
+        if "schedules?group=" in href:
+            full_url = href if href.startswith("http") else "https://system.gotsport.com" + href
+            name = a.get_text(strip=True)
+            divisions.append({"name": name, "url": full_url})
+
+    # Deduplicate
     seen = set()
-    unique_divisions = []
+    unique = []
     for d in divisions:
         if d["url"] not in seen:
             seen.add(d["url"])
-            unique_divisions.append(d)
+            unique.append(d)
 
     with open("division_meta.json", "w") as f:
-        json.dump({"divisions": unique_divisions}, f, indent=2)
+        json.dump({"divisions": unique}, f, indent=2)
 
     print("Discovered divisions:")
-    for d in unique_divisions:
+    for d in unique:
         print(f" - {d['name']}: {d['url']}")
 
 if __name__ == "__main__":
