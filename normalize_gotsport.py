@@ -2,6 +2,7 @@ import pandas as pd
 import unicodedata
 import re
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 def normalize_unicode_spaces(s):
     if not isinstance(s, str):
@@ -18,13 +19,23 @@ def normalize_unicode_spaces(s):
     return cleaned
 
 def normalize_time(row):
+    """
+    Converts raw GotSport time strings like:
+    'Jun 22, 2026 9:00AM EDT'
+    into a proper ISO-8601 datetime with timezone awareness.
+    """
     raw = row["Time"].replace("\n", " ").strip()
+
+    # Parse with timezone
     dt = datetime.strptime(raw, "%b %d, %Y %I:%M%p EDT")
-    return dt.strftime("%Y-%m-%dT%H:%M:%S-04:00")
+    dt = dt.replace(tzinfo=ZoneInfo("America/New_York"))
+
+    return dt.isoformat()
 
 def main():
     df = pd.read_csv("gotsport_raw.csv")
 
+    # Normalize unicode and whitespace
     for col in df.columns:
         if df[col].dtype == "object":
             df[col] = df[col].map(normalize_unicode_spaces)
@@ -38,6 +49,7 @@ def main():
                 .str.strip()
             )
 
+    # Build datetime column
     if "Time" in df.columns:
         df["datetime"] = df.apply(normalize_time, axis=1)
 
