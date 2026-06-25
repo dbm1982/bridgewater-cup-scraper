@@ -2,17 +2,31 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 12\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:59 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 12\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
 LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
 DTSTART:20260627T131000Z
 SUMMARY:Rockland Bulldogs vs HAYSA
-UID:a2445b9c-a9ba-4013-8278-d7edc4ad29ca@a244.org
+UID:51e7c097-3b7f-4930-8aaf-e96a66233851@51e7.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 14\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 05:59 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 9v9\nGame #: 17 Final\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+LOCATION:Flagg Street Soccer Complex - Field 7 - 9v9
+DTSTART:20260628T153000Z
+SUMMARY:Bracket A #1 vs Bracket A #2
+UID:60eefcb1-cdf2-45fe-9d50-20bf76ec8956@60ee.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 16\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
+DTSTART:20260628T131000Z
+SUMMARY:HAYSA vs BYSA U12 Team Black
+UID:8d19dea9-a689-4126-84b0-975614883fc4@8d19.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 9v9\nGame #: 14\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
 LOCATION:Flagg Street Soccer Complex - Field 8 - 9v9
 DTSTART:20260627T153000Z
 SUMMARY:HAYSA vs Wolfpack FC
-UID:a05779a8-480e-481b-b7f8-3fdf8cc51c02@a057.org
+UID:2675b7c8-7c5d-4d7c-8664-955555dd505e@2675.org
 END:VEVENT
 END:VCALENDAR
