@@ -50,9 +50,8 @@ def main():
         print(f"Saved {filename}")
 
     # ----------------------------------------------------
-    # TEAM ICS (DIVISION-SCOPED)
+    # TEAM ICS (DIVISION-SCOPED) — PATCHED
     # ----------------------------------------------------
-    # Structure: team_cals[division][team] = Calendar()
     team_cals = defaultdict(lambda: defaultdict(Calendar))
 
     for _, row in df.iterrows():
@@ -60,7 +59,23 @@ def main():
         home = row["Home Team"].strip()
         away = row["Away Team"].strip()
 
-        # Create event using CLEAN names
+        # Lowercase versions for matching
+        home_lower = home.lower()
+        away_lower = away.lower()
+
+        # HAYSA/HOLA/Lady Bulldogs logic
+        is_haysa_family = (
+            "haysa" in home_lower or "haysa" in away_lower or
+            "hola" in home_lower or "hola" in away_lower or
+            "lady bulldogs" in home_lower or "lady bulldogs" in away_lower
+        )
+
+        # Bracket placeholder logic
+        is_bracket_game = (
+            "bracket" in home_lower or "bracket" in away_lower
+        )
+
+        # Create event
         event = Event()
         event.name = f"{home} vs {away}"
         event.begin = row["datetime"]
@@ -76,8 +91,14 @@ def main():
         )
 
         # Add event to BOTH teams within THIS division
+        # (existing behavior)
         team_cals[division][home].events.add(event)
         team_cals[division][away].events.add(event)
+
+        # NEW: Add bracket games to ALL HAYSA/HOLA/Lady Bulldogs teams
+        if is_bracket_game or is_haysa_family:
+            for team in team_cals[division].keys():
+                team_cals[division][team].events.add(event)
 
     # Write team ICS files
     for division, teams in team_cals.items():
