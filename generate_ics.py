@@ -61,10 +61,17 @@ def main():
         team_cals[away].events.add(event)
 
     for team, cal in team_cals.items():
-        safe = team.replace(" ", "_").replace("/", "_")
+        # Extract GU12, BU8, GU10, etc.
+        agegroup = row["Division"].split()[0]
+
+        # Build filename: HAYSA_GU12.ics, HAYSA_BU8.ics, etc.
+        safe_team = team.replace(" ", "_").replace("/", "_")
+        safe = f"{safe_team}_{agegroup}"
+
         filename = f"calendars/teams/{safe}.ics"
         with open(filename, "w") as f:
             f.writelines(cal)
+
         print(f"Saved {filename}")
 
     # -----------------------------------------
