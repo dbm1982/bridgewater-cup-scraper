@@ -55,6 +55,7 @@ def main():
     team_cals = defaultdict(Calendar)
 
     for _, row in df.iterrows():
+        # CLEAN team names
         home = row["Home Team"].strip()
         away = row["Away Team"].strip()
 
@@ -64,8 +65,9 @@ def main():
         if "Bracket" in away:
             away = away.strip()
 
+        # Create event using CLEAN names
         event = Event()
-        event.name = f"{row['Home Team']} vs {row['Away Team']}"
+        event.name = f"{home} vs {away}"
         event.begin = row["datetime"]
         event.location = row["Location"]
 
@@ -78,15 +80,22 @@ def main():
             f"(last refreshed {last_updated})"
         )
 
+        # Add event to BOTH teams
         team_cals[home].events.add(event)
         team_cals[away].events.add(event)
 
+    # Write team ICS files
     for team, cal in team_cals.items():
 
         if len(cal.events) == 0:
             continue
 
-        sample = df[(df["Home Team"] == team) | (df["Away Team"] == team)]
+        # FIX: match using stripped values
+        sample = df[
+            (df["Home Team"].str.strip() == team) |
+            (df["Away Team"].str.strip() == team)
+        ]
+
         if sample.empty:
             continue
 
