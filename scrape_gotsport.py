@@ -21,6 +21,10 @@ def fetch_html(url):
     r.raise_for_status()
     return r.text
 
+
+# ------------------------------------------------------------
+# PARSE POOL-PLAY TABLES
+# ------------------------------------------------------------
 def parse_schedule_table(table, division_name):
     rows = []
     for tr in table.find_all("tr"):
@@ -46,18 +50,11 @@ def parse_schedule_table(table, division_name):
 
 
 # ------------------------------------------------------------
-# ⭐ NEW: BRACKET SCRAPER
+# ⭐ NEW: SCRAPE BRACKET GAMES FROM SAME PAGE
 # ------------------------------------------------------------
-def scrape_brackets(div):
-    bracket_url = div["url"].replace("schedules", "brackets")
-    print("Fetching bracket page:", bracket_url)
-
-    html = fetch_html(bracket_url)
-    soup = BeautifulSoup(html, "html.parser")
-
+def scrape_bracket_games_from_schedule_page(soup, division_name):
     games = []
 
-    # Bracket games are inside <div class="bracket-game"> blocks
     for game in soup.select(".bracket-game"):
         teams = game.select(".team-name")
         times = game.select(".game-time")
@@ -73,7 +70,7 @@ def scrape_brackets(div):
         field_str = fields[0].get_text(strip=True) if fields else ""
 
         games.append({
-            "Division": div["name"],
+            "Division": division_name,
             "Match #": "",
             "Time": time_str,
             "Home Team": home,
@@ -82,15 +79,11 @@ def scrape_brackets(div):
             "Results": ""
         })
 
-    if not games:
-        print("No bracket games found for", div["name"])
-        return None
-
-    return pd.DataFrame(games)
+    return pd.DataFrame(games) if games else None
 
 
 # ------------------------------------------------------------
-# POOL SCRAPER (unchanged)
+# SCRAPE DIVISION (POOL + BRACKET)
 # ------------------------------------------------------------
 def scrape_division(div):
     all_tables = []
@@ -102,8 +95,8 @@ def scrape_division(div):
     html = fetch_html(base_url)
     soup = BeautifulSoup(html, "html.parser")
 
+    # 1. Scrape pool-play tables
     tables = soup.find_all("table")
-
     for table in tables:
         headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
 
@@ -114,6 +107,14 @@ def scrape_division(div):
             df = parse_schedule_table(table, division_name)
             if df is not None:
                 all_tables.append(df)
+
+    # 2. Scrape bracket games from SAME page
+    df_brackets = scrape_bracket_games_from_schedule_page(soup, division_name)
+    if df_brackets is not None:
+        print(f"Found {len(df_brackets)} bracket games for {division_name}")
+        all_tables.append(df_brackets)
+    else:
+        print(f"No bracket games found for {division_name}")
 
     if not all_tables:
         print(f"No schedule tables found for {division_name}")
@@ -131,19 +132,9 @@ def main():
 
     for div in divisions:
         print(f"Scraping division: {div['name']}")
-
-        df_pool = scrape_division(div)
-        df_bracket = scrape_brackets(div)
-
-        frames = []
-        if df_pool is not None:
-            frames.append(df_pool)
-        if df_bracket is not None:
-            frames.append(df_bracket)
-
-        if frames:
-            all_schedules.append(pd.concat(frames, ignore_index=True))
-
+        df = scrape_division(div)
+        if df is not None:
+            all_schedules.append(df)
         time.sleep(1)
 
     if not all_schedules:
