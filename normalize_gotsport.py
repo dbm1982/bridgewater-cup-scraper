@@ -16,8 +16,15 @@ def normalize_time(row):
 def main():
     df = pd.read_csv("gotsport_raw.csv")
 
-    # Fix unicode whitespace (critical!)
-    df = df.applymap(lambda x: x.replace("\u00A0", " ") if isinstance(x, str) else x)
+    # ---------------------------------------------------------
+    # FIX: pandas 3.0 removed applymap()
+    # Normalize unicode whitespace column-by-column
+    # ---------------------------------------------------------
+    for col in df.columns:
+        if df[col].dtype == "object":
+            df[col] = df[col].map(
+                lambda x: x.replace("\u00A0", " ") if isinstance(x, str) else x
+            )
 
     # Clean whitespace for string columns only
     for col in df.columns:
