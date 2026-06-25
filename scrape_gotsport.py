@@ -42,10 +42,14 @@ def parse_schedule_table(table, division_name):
 
     df = pd.DataFrame(data, columns=header)
 
-    # Ensure Division column is correct
-    df.insert(0, "Division", division_name)
+    # Fix: Only insert Division if missing
+    if "Division" not in df.columns:
+        df.insert(0, "Division", division_name)
+    else:
+        df["Division"] = division_name
 
     return df
+
 
 def scrape_division(div):
     all_days = []
