@@ -1,5 +1,4 @@
 import pandas as pd
-
 from datetime import datetime
 
 def normalize_time(row):
@@ -25,16 +24,44 @@ def main():
     # Normalize datetime
     df["datetime"] = df.apply(normalize_time, axis=1)
 
-    # Clean team names
+    # ---------------------------------------------------------
+    # TEAM NAME CLEANING (Bracket-safe)
+    # ---------------------------------------------------------
+    # We DO want to collapse weird whitespace, but we DO NOT want
+    # to strip out the word "Bracket" or merge it incorrectly.
+    #
+    # Example:
+    #   "Bracket A" → keep
+    #   "Bracket   A" → collapse to "Bracket A"
+    #   "BracketA" → keep as-is
+    #
+    # This preserves all Bracket teams.
+    # ---------------------------------------------------------
+
     if "Home Team" in df.columns:
-        df["Home Team"] = df["Home Team"].str.replace(r"\s+", " ", regex=True)
+        df["Home Team"] = (
+            df["Home Team"]
+            .astype(str)
+            .str.replace(r"\s+", " ", regex=True)
+            .str.strip()
+        )
 
     if "Away Team" in df.columns:
-        df["Away Team"] = df["Away Team"].str.replace(r"\s+", " ", regex=True)
+        df["Away Team"] = (
+            df["Away Team"]
+            .astype(str)
+            .str.replace(r"\s+", " ", regex=True)
+            .str.strip()
+        )
 
     # Clean location
     if "Location" in df.columns:
-        df["Location"] = df["Location"].str.replace(r"\s+", " ", regex=True)
+        df["Location"] = (
+            df["Location"]
+            .astype(str)
+            .str.replace(r"\s+", " ", regex=True)
+            .str.strip()
+        )
 
     # Final column order
     keep_cols = [
