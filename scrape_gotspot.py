@@ -4,6 +4,10 @@ import pandas as pd
 import time
 import json
 
+import os
+HEADLESS = os.getenv("GITHUB_ACTIONS") == "true"
+
+
 def scrape_division(div):
     name = div["name"]
     url = div["url"]
@@ -11,7 +15,7 @@ def scrape_division(div):
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
-            headless=False,
+            headless=HEADLESS,   # ← FIXED HERE
             args=[
                 "--disable-blink-features=AutomationControlled",
                 "--no-sandbox",
@@ -55,6 +59,7 @@ def scrape_division(div):
     combined = pd.concat(frames, ignore_index=True)
     return combined
 
+
 def main():
     with open("division_meta.json") as f:
         meta = json.load(f)
@@ -72,6 +77,7 @@ def main():
     full = pd.concat(all_frames, ignore_index=True)
     full.to_csv("gotsport_raw.csv", index=False)
     print("Saved gotsport_raw.csv")
+
 
 if __name__ == "__main__":
     main()
