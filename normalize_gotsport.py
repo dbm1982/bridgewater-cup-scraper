@@ -7,13 +7,9 @@ def normalize_unicode_spaces(s):
     if not isinstance(s, str):
         return s
 
-    # Normalize unicode (converts many weird spaces to standard forms)
     s = unicodedata.normalize("NFKC", s)
-
-    # Remove zero-width characters (ZWNJ, ZWJ, BOM)
     s = re.sub(r"[\u200B-\u200D\uFEFF]", "", s)
 
-    # Replace ALL unicode whitespace with normal spaces
     cleaned = "".join(
         " " if unicodedata.category(c).startswith("Z") else c
         for c in s
@@ -29,16 +25,10 @@ def normalize_time(row):
 def main():
     df = pd.read_csv("gotsport_raw.csv")
 
-    # ---------------------------------------------------------
-    # Normalize ALL unicode whitespace column-by-column
-    # ---------------------------------------------------------
     for col in df.columns:
         if df[col].dtype == "object":
             df[col] = df[col].map(normalize_unicode_spaces)
 
-    # ---------------------------------------------------------
-    # Collapse normal whitespace
-    # ---------------------------------------------------------
     for col in df.columns:
         if df[col].dtype == "object":
             df[col] = (
@@ -48,14 +38,9 @@ def main():
                 .str.strip()
             )
 
-    # ---------------------------------------------------------
-    # Normalize datetime
-    # ---------------------------------------------------------
-    df["datetime"] = df.apply(normalize_time, axis=1)
+    if "Time" in df.columns:
+        df["datetime"] = df.apply(normalize_time, axis=1)
 
-    # ---------------------------------------------------------
-    # Final column order
-    # ---------------------------------------------------------
     keep_cols = [
         "Division",
         "Match #",
