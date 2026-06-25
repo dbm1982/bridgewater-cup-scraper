@@ -61,10 +61,13 @@ def main():
         team_cals[away].events.add(event)
 
     for team, cal in team_cals.items():
-        # Extract GU12, BU8, GU10, etc.
-        agegroup = row["Division"].split()[0]
 
-        # Build filename: HAYSA_GU12.ics, HAYSA_BU8.ics, etc.
+        # Get the correct division for THIS team
+        first_event = next(iter(cal.events))
+        division = first_event.description.replace("Division: ", "")
+        agegroup = division.split()[0]  # GU12, BU8, etc.
+
+        # Build safe filename
         safe_team = team.replace(" ", "_").replace("/", "_")
         safe = f"{safe_team}_{agegroup}"
 
