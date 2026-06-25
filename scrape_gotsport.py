@@ -45,6 +45,53 @@ def parse_schedule_table(table, division_name):
     return df
 
 
+# ------------------------------------------------------------
+# ⭐ NEW: BRACKET SCRAPER
+# ------------------------------------------------------------
+def scrape_brackets(div):
+    bracket_url = div["url"].replace("schedules", "brackets")
+    print("Fetching bracket page:", bracket_url)
+
+    html = fetch_html(bracket_url)
+    soup = BeautifulSoup(html, "html.parser")
+
+    games = []
+
+    # Bracket games are inside <div class="bracket-game"> blocks
+    for game in soup.select(".bracket-game"):
+        teams = game.select(".team-name")
+        times = game.select(".game-time")
+        fields = game.select(".game-field")
+
+        if len(teams) == 2:
+            home = teams[0].get_text(strip=True)
+            away = teams[1].get_text(strip=True)
+        else:
+            continue
+
+        time_str = times[0].get_text(strip=True) if times else ""
+        field_str = fields[0].get_text(strip=True) if fields else ""
+
+        games.append({
+            "Division": div["name"],
+            "Match #": "",
+            "Time": time_str,
+            "Home Team": home,
+            "Away Team": away,
+            "Location": field_str,
+            "Results": ""
+        })
+
+    if not games:
+        print("No bracket games found for", div["name"])
+        return None
+
+    return pd.DataFrame(games)
+
+
+# ------------------------------------------------------------
+# POOL SCRAPER (unchanged)
+# ------------------------------------------------------------
 def scrape_division(div):
     all_tables = []
     base_url = div["url"]
@@ -52,17 +99,14 @@ def scrape_division(div):
 
     print("DEBUG: Using base_url =", base_url)
 
-    # Fetch the full group page (contains ALL games)
     html = fetch_html(base_url)
     soup = BeautifulSoup(html, "html.parser")
 
     tables = soup.find_all("table")
 
-    # ⭐ IMPORTANT FIX: DO NOT STOP AFTER FIRST MATCHING TABLE
     for table in tables:
         headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
 
-        # Identify schedule tables
         if (
             "match #" in headers
             or ("time" in headers and "home" in headers and "away" in headers)
@@ -75,19 +119,31 @@ def scrape_division(div):
         print(f"No schedule tables found for {division_name}")
         return None
 
-    # Merge all tables into one DataFrame
     return pd.concat(all_tables, ignore_index=True)
 
 
+# ------------------------------------------------------------
+# MAIN
+# ------------------------------------------------------------
 def main():
     divisions = load_divisions()
     all_schedules = []
 
     for div in divisions:
         print(f"Scraping division: {div['name']}")
-        df = scrape_division(div)
-        if df is not None:
-            all_schedules.append(df)
+
+        df_pool = scrape_division(div)
+        df_bracket = scrape_brackets(div)
+
+        frames = []
+        if df_pool is not None:
+            frames.append(df_pool)
+        if df_bracket is not None:
+            frames.append(df_bracket)
+
+        if frames:
+            all_schedules.append(pd.concat(frames, ignore_index=True))
+
         time.sleep(1)
 
     if not all_schedules:
