@@ -2,52 +2,31 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 94\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260627T212000Z
-SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs HAYSA squad
-UID:c6a1ef11-f1df-4c6f-adc1-7b6a0c6b6a3e@c6a1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 100\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260628T153000Z
-SUMMARY:Bridgewater United vs HAYSA squad
-UID:0d38e0dc-d973-4b28-9889-aa165656a242@0d38.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 91\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 91\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260627T175000Z
-SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Bridgewater United
-UID:15b09d6d-b848-4acd-ba2a-26d32b6d9c93@15b0.org
+SUMMARY:(BU10) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Bridgewater United
+UID:fe48e3fd-3e68-4ee2-b418-c1f65ee5653b@fe48.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 92\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
-DTSTART:20260627T190000Z
-SUMMARY:HAYSA squad vs Acushnet Youth Soccer Acushnet FC (Araujo)
-UID:152fe2e8-0f3d-4686-8d5e-84abdc19801a@152f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 98\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 94\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260628T120000Z
-SUMMARY:HAYSA squad vs Braintree Wamps
-UID:6fa8b641-f2bc-4a16-aaea-9591919b4d61@6fa8.org
+DTSTART:20260627T212000Z
+SUMMARY:(BU10) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs HAYSA squad
+UID:48e4b4be-38b8-4326-ad55-6738fb86b4ad@48e4.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 97\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 97\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260628T131000Z
-SUMMARY:Attleboro Spartans vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:ad01ccb5-4173-4b08-a702-5fa3fbdb0e62@ad01.org
+SUMMARY:(BU10) Attleboro Spartans vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:8cca48e8-1bf0-47ea-806a-e34349b4ba2f@8cca.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 101\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 101\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260628T153000Z
-SUMMARY:Braintree Wamps vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:4f15c9f9-1b8a-4373-bd31-987d97c5ae44@4f15.org
+SUMMARY:(BU10) Braintree Wamps vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:b2194947-5c26-4903-8e3a-afc61d267795@b219.org
 END:VEVENT
 END:VCALENDAR

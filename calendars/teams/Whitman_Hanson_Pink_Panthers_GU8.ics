@@ -2,45 +2,31 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 176\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 176\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T131000Z
-SUMMARY:Lincoln vs Whitman Hanson Pink Panthers
-UID:437a96f2-c298-4ce2-8840-a9c21a018fb5@437a.org
+SUMMARY:(GU8) Lincoln vs Whitman Hanson Pink Panthers
+UID:357a5827-5776-412a-973d-30010f9342ae@357a.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 186\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260628T223000Z
-SUMMARY:HAYSA Lady Bulldogs vs Carver 2nd
-UID:992254f7-cf62-450a-90fb-3a23c698f19e@9922.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 184\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260628T201000Z
-SUMMARY:Carver 2nd vs Whitman Hanson Pink Panthers
-UID:00256459-3a0c-45d1-b6b4-040cfc6ebfc7@0025.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 175\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T175000Z
-SUMMARY:Raynham vs HAYSA Lady Bulldogs
-UID:f3b70d57-ab37-4695-9dde-445944aa8ec0@f3b7.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 180\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T175000Z
-SUMMARY:Whitman Hanson Pink Panthers vs HAYSA Lady Bulldogs
-UID:94dbfab0-7bfc-45c0-a755-5601bdb9252d@94db.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 179\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 179\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T223000Z
-SUMMARY:Whitman Hanson Pink Panthers vs Raynham
-UID:3dbddd7d-dbcf-458d-8c70-60e6be224fe0@3dbd.org
+SUMMARY:(GU8) Whitman Hanson Pink Panthers vs Raynham
+UID:71a01974-3972-4ecf-8630-1b14554470a0@71a0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 180\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T175000Z
+SUMMARY:(GU8) Whitman Hanson Pink Panthers vs HAYSA Lady Bulldogs
+UID:4520c5d3-9675-4407-829a-57b07ba97ea1@4520.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 184\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260628T201000Z
+SUMMARY:(GU8) Carver 2nd vs Whitman Hanson Pink Panthers
+UID:a9438e5b-6ad1-445c-9031-cd50397571ac@a943.org
 END:VEVENT
 END:VCALENDAR

@@ -2,17 +2,10 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 7v7\nGame #: 146 4th Game B\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 6 - 7v7
-DTSTART:20260628T212000Z
-SUMMARY:Bracket A #3 vs Bracket A #4
-UID:7e2a540f-175a-4374-96a1-4e94de706ce7@7e2a.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 7v7\nGame #: 145 4th Game A\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 5 - 7v7
-DTSTART:20260628T212000Z
-SUMMARY:Bracket A #1 vs Bracket A #2
-UID:0d111e9f-3f62-478c-aea9-3b9fbbc614b6@0d11.org
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 146 4th Game B\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
+LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
+DTSTART:20260628T223000Z
+SUMMARY:(GU10) Bracket A #3 vs Bracket A #4
+UID:41babc26-dc16-4f8f-8caf-082fbf0220b9@41ba.org
 END:VEVENT
 END:VCALENDAR

@@ -2,52 +2,31 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 186\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260628T223000Z
-SUMMARY:HAYSA Lady Bulldogs vs Carver 2nd
-UID:992254f7-cf62-450a-90fb-3a23c698f19e@9922.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 173\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T164000Z
-SUMMARY:Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:678e1f31-2db0-470c-b746-9c472d2f8894@678e.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 183\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T201000Z
-SUMMARY:Lincoln vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:69de5267-f6bb-41c7-ba50-7811e22b27eb@69de.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 178\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 178\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T142000Z
-SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Carver 2nd
-UID:e49baa2b-ae23-4418-bd6b-8cb815d7c750@e49b.org
+SUMMARY:(GU8) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Carver 2nd
+UID:1b7e5227-e891-4941-9f0b-c5f38b0a1fc6@1b7e.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 175\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 173\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T175000Z
-SUMMARY:Raynham vs HAYSA Lady Bulldogs
-UID:f3b70d57-ab37-4695-9dde-445944aa8ec0@f3b7.org
+DTSTART:20260627T164000Z
+SUMMARY:(GU8) Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:44e49023-9be6-4193-bbc5-a777172263b1@44e4.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 180\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T175000Z
-SUMMARY:Whitman Hanson Pink Panthers vs HAYSA Lady Bulldogs
-UID:94dbfab0-7bfc-45c0-a755-5601bdb9252d@94db.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 181\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 06:30 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 181\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260628T164000Z
-SUMMARY:Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Raynham
-UID:6d9d0b81-81e4-4de5-b815-74c995240c92@6d9d.org
+SUMMARY:(GU8) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Raynham
+UID:4979431c-c361-45ac-86cd-1eb07ea28cad@4979.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 183\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 25\, 2026 03:12 PM)
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T201000Z
+SUMMARY:(GU8) Lincoln vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:a3296a9f-616c-47e4-813b-1edf30f2f096@a329.org
 END:VEVENT
 END:VCALENDAR
