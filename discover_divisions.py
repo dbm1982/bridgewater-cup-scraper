@@ -5,7 +5,7 @@ import os
 
 HEADLESS = os.getenv("GITHUB_ACTIONS") == "true"
 
-EVENT_URL = "https://system.gotsport.com/org_event/events/52266"
+EVENT_URL = "https://system.gotsport.com/org_event/events/52266/schedules"
 
 def discover_division_groups():
     divisions = []
