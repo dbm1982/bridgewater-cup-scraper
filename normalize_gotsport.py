@@ -1,16 +1,23 @@
 import pandas as pd
 import unicodedata
+import re
 from datetime import datetime
 
 def normalize_unicode_spaces(s):
     if not isinstance(s, str):
         return s
 
-    # Normalize unicode (NFKC converts weird spaces to normal ones)
+    # Normalize unicode (converts many weird spaces to standard forms)
     s = unicodedata.normalize("NFKC", s)
 
-    # Replace any remaining unicode whitespace with normal spaces
-    cleaned = "".join(" " if unicodedata.category(c) == "Zs" else c for c in s)
+    # Remove zero-width characters (ZWNJ, ZWJ, BOM)
+    s = re.sub(r"[\u200B-\u200D\uFEFF]", "", s)
+
+    # Replace ALL unicode whitespace with normal spaces
+    cleaned = "".join(
+        " " if unicodedata.category(c).startswith("Z") else c
+        for c in s
+    )
 
     return cleaned
 
@@ -22,12 +29,16 @@ def normalize_time(row):
 def main():
     df = pd.read_csv("gotsport_raw.csv")
 
-    # Normalize unicode whitespace column-by-column
+    # ---------------------------------------------------------
+    # Normalize ALL unicode whitespace column-by-column
+    # ---------------------------------------------------------
     for col in df.columns:
         if df[col].dtype == "object":
             df[col] = df[col].map(normalize_unicode_spaces)
 
+    # ---------------------------------------------------------
     # Collapse normal whitespace
+    # ---------------------------------------------------------
     for col in df.columns:
         if df[col].dtype == "object":
             df[col] = (
@@ -37,8 +48,14 @@ def main():
                 .str.strip()
             )
 
+    # ---------------------------------------------------------
+    # Normalize datetime
+    # ---------------------------------------------------------
     df["datetime"] = df.apply(normalize_time, axis=1)
 
+    # ---------------------------------------------------------
+    # Final column order
+    # ---------------------------------------------------------
     keep_cols = [
         "Division",
         "Match #",
