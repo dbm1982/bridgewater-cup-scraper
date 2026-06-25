@@ -50,20 +50,15 @@ def main():
         print(f"Saved {filename}")
 
     # ----------------------------------------------------
-    # TEAM ICS
+    # TEAM ICS (DIVISION-SCOPED)
     # ----------------------------------------------------
-    team_cals = defaultdict(Calendar)
+    # Structure: team_cals[division][team] = Calendar()
+    team_cals = defaultdict(lambda: defaultdict(Calendar))
 
     for _, row in df.iterrows():
-        # CLEAN team names
+        division = row["Division"]
         home = row["Home Team"].strip()
         away = row["Away Team"].strip()
-
-        # Normalize bracket teams
-        if "Bracket" in home:
-            home = home.strip()
-        if "Bracket" in away:
-            away = away.strip()
 
         # Create event using CLEAN names
         event = Event()
@@ -80,35 +75,25 @@ def main():
             f"(last refreshed {last_updated})"
         )
 
-        # Add event to BOTH teams
-        team_cals[home].events.add(event)
-        team_cals[away].events.add(event)
+        # Add event to BOTH teams within THIS division
+        team_cals[division][home].events.add(event)
+        team_cals[division][away].events.add(event)
 
     # Write team ICS files
-    for team, cal in team_cals.items():
+    for division, teams in team_cals.items():
+        agegroup = division.split()[0]  # e.g., BU8, GU10, etc.
 
-        if len(cal.events) == 0:
-            continue
+        for team, cal in teams.items():
+            if len(cal.events) == 0:
+                continue
 
-        # FIX: match using stripped values
-        sample = df[
-            (df["Home Team"].str.strip() == team) |
-            (df["Away Team"].str.strip() == team)
-        ]
+            safe_team = team.replace(" ", "_").replace("/", "_")
+            filename = f"calendars/teams/{safe_team}_{agegroup}.ics"
 
-        if sample.empty:
-            continue
+            with open(filename, "w") as f:
+                f.writelines(cal)
 
-        division = sample.iloc[0]["Division"]
-        agegroup = division.split()[0]
-
-        safe_team = team.replace(" ", "_").replace("/", "_")
-        filename = f"calendars/teams/{safe_team}_{agegroup}.ics"
-
-        with open(filename, "w") as f:
-            f.writelines(cal)
-
-        print(f"Saved {filename}")
+            print(f"Saved {filename}")
 
     # ----------------------------------------------------
     # COMBINED ICS
