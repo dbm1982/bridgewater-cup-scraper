@@ -2,43 +2,43 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 64\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 10:10 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 64\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 11:37 AM)
 DTEND:20260627T125500Z
 LOCATION:Flagg Street Soccer Complex - Field 7 - 7v7
 DTSTART:20260627T120000Z
 SUMMARY:(GU10) BYSA - Walden vs HOLA 4.3(Mills)
-UID:4a6a40e3-eb1d-4445-b437-dadb5523c1fe@4a6a.org
+UID:2569b320-e76e-463d-a173-e8de503e6fb6@2569.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 66\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 10:10 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 66\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 11:37 AM)
 DTEND:20260627T151500Z
 LOCATION:Flagg Street Soccer Complex - Field 8 - 7v7
 DTSTART:20260627T142000Z
 SUMMARY:(GU10) HOLA 4.3(Mills) vs East bridgewater
-UID:1069104e-1502-4073-b5ad-0b662b8278dc@1069.org
+UID:e8d0c81e-04ba-48c0-a866-eaec383dc68a@e8d0.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 68\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 10:10 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 68\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 11:37 AM)
 DTEND:20260628T210500Z
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260628T201000Z
 SUMMARY:(GU10) HOLA 4.3(Mills) vs Abington McLoughlin GU10
-UID:c22d461f-472c-48da-baa5-1c90008e5b1e@c22d.org
+UID:c1ce2513-f889-47a4-bea2-a81dac0324d0@c1ce.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 145 4th Game A\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 10:10 AM)
-DTEND:20260628T232500Z
-LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260628T223000Z
-SUMMARY:(GU10) Bracket A #1 vs Bracket A #2
-UID:7e5123e4-6928-4324-a549-339cac629e69@7e51.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 146 4th Game B\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 10:10 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 146 4th Game B\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 11:37 AM)
 DTEND:20260628T232500Z
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260628T223000Z
 SUMMARY:(GU10) Bracket A #3 vs Bracket A #4
-UID:75beeb6f-ae50-4b9d-b81e-dc675e32dec0@75be.org
+UID:491ae7b1-7467-448c-bdd7-6a186233736f@491a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 145 4th Game A\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Jun 27\, 2026 11:37 AM)
+DTEND:20260628T232500Z
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260628T223000Z
+SUMMARY:(GU10) Bracket A #1 vs Bracket A #2
+UID:4490afe4-3013-4f37-bbe3-01b7f5745fb9@4490.org
 END:VEVENT
 END:VCALENDAR
