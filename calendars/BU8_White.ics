@@ -2,83 +2,83 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 171\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
-DTEND:20260628T195500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T190000Z
-SUMMARY:(BU8) HAYSA vs Rising Stars FC Rising Stars FC U9
-UID:72cfb7a8-be5d-46b7-aecc-5735307305fc@72cf.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 166\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
-DTEND:20260627T210500Z
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T201000Z
-SUMMARY:(BU8) Bridgewater Youth Soccer Association BYSA Marsh vs Rising Stars FC Rising Stars FC U9
-UID:017144bc-0b70-453c-8823-9501516ceb3c@0171.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 164\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
-DTEND:20260627T162500Z
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T153000Z
-SUMMARY:(BU8) Rising Stars FC Rising Stars FC U9 vs Weigold
-UID:6ca557c3-e2fd-40ba-9569-e924c1e7fc9b@6ca5.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 167\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
-DTEND:20260627T210500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T201000Z
-SUMMARY:(BU8) Weigold vs Vikings United U8
-UID:2845b770-134f-4eb3-b7c2-22d253334ff7@2845.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 168\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
-DTEND:20260628T221500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T212000Z
-SUMMARY:(BU8) Weigold vs HAYSA
-UID:9bfb63a4-f7d0-4dae-a48b-3112c6f3196f@9bfb.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 165\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 165\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
 DTEND:20260627T232500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T223000Z
 SUMMARY:(BU8) Vikings United U8 vs HAYSA
-UID:25786d02-f37a-484a-9930-c0cfa86837a7@2578.org
+UID:b899a5a1-6b78-42ec-a9e0-1174d09155ef@b899.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 169\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
-DTEND:20260628T232500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T223000Z
-SUMMARY:(BU8) Rising Stars FC Rising Stars FC U9 vs Vikings United U8
-UID:78b5ada4-9eab-4834-b28b-5ef677af7e08@78b5.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 170\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
-DTEND:20260628T195500Z
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260628T190000Z
-SUMMARY:(BU8) Bridgewater Youth Soccer Association BYSA Marsh vs Weigold
-UID:5a95814c-e3f5-47be-9e9c-b6007d1e1964@5a95.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 163\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 163\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
 DTEND:20260627T173500Z
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T164000Z
 SUMMARY:(BU8) HAYSA vs Bridgewater Youth Soccer Association BYSA Marsh
-UID:bdc4492d-6f06-42db-8873-99354ad52a14@bdc4.org
+UID:8f271ddd-8f00-4664-86f6-d7a9dbff42db@8f27.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 172\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 04:14 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 170\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
+DTEND:20260628T195500Z
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260628T190000Z
+SUMMARY:(BU8) Bridgewater Youth Soccer Association BYSA Marsh vs Weigold
+UID:5b62de49-5d03-40ee-9f72-59b9ef1c3ff2@5b62.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 168\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
+DTEND:20260628T221500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T212000Z
+SUMMARY:(BU8) Weigold vs HAYSA
+UID:53dbe197-035f-4d39-bb65-d7b5926b7a83@53db.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 164\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
+DTEND:20260627T162500Z
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T153000Z
+SUMMARY:(BU8) Rising Stars FC Rising Stars FC U9 vs Weigold
+UID:97e79ed6-770f-4d65-95f2-dbe3776dee4b@97e7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 166\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
+DTEND:20260627T210500Z
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T201000Z
+SUMMARY:(BU8) Bridgewater Youth Soccer Association BYSA Marsh vs Rising Stars FC Rising Stars FC U9
+UID:3a5e06c4-81c2-4adb-b0f4-19e73c645ef3@3a5e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 167\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
+DTEND:20260627T210500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T201000Z
+SUMMARY:(BU8) Weigold vs Vikings United U8
+UID:35ff49a3-faae-425d-afd2-f09050e9eb0f@35ff.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 169\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
+DTEND:20260628T232500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T223000Z
+SUMMARY:(BU8) Rising Stars FC Rising Stars FC U9 vs Vikings United U8
+UID:50f39ab8-e585-42d9-80d5-4c5b35ffd551@50f3.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 171\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
+DTEND:20260628T195500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T190000Z
+SUMMARY:(BU8) HAYSA vs Rising Stars FC Rising Stars FC U9
+UID:5378bc0d-3dd9-4210-82aa-c6516b38ee17@5378.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 172\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 05\, 2026 05:33 PM)
 DTEND:20260628T173500Z
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260628T164000Z
 SUMMARY:(BU8) Vikings United U8 vs Bridgewater Youth Soccer Association BYSA Marsh
-UID:f8a74b06-1c68-4f8c-9048-f37718f79bb0@f8a7.org
+UID:e49a3143-8b79-4508-a445-be4ec1ae85c7@e49a.org
 END:VEVENT
 END:VCALENDAR
