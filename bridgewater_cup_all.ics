@@ -2,411 +2,411 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 63\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T125500Z
-LOCATION:Flagg Street Soccer Complex - Field 8 - 7v7
-DTSTART:20260627T120000Z
-SUMMARY:(GU10) East bridgewater vs Abington Youth Soccer Abington McLoughlin GU10
-UID:873c033d-6d8f-4660-8ebb-4e2bbb5e07ed@873c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 64\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 64\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T125500Z
 LOCATION:Flagg Street Soccer Complex - Field 7 - 7v7
 DTSTART:20260627T120000Z
 SUMMARY:(GU10) Bridgewater Youth Soccer Association BYSA - Walden vs Holbrook Avon YSA HOLA 4.3(Mills)
-UID:7671e62a-0c10-43a5-998d-dd2ce79e826c@7671.org
+UID:7c5cd7f0-846a-45c0-b148-7d50ba88471c@7c5c.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 11\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T140500Z
-LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
-DTSTART:20260627T131000Z
-SUMMARY:(GU12) Wolfpack FC vs Bridgewater Youth Soccer Association BYSA U12 Team Black
-UID:8f517d15-1816-4fc7-b9de-f5b600670c93@8f51.org
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 63\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T125500Z
+LOCATION:Flagg Street Soccer Complex - Field 8 - 7v7
+DTSTART:20260627T120000Z
+SUMMARY:(GU10) East bridgewater vs Abington Youth Soccer Abington McLoughlin GU10
+UID:10bdef81-4ffb-4519-8237-d64b864682ec@10bd.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 176\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T140500Z
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T131000Z
-SUMMARY:(GU8) Lincoln vs Whitman-Hanson YS Whitman Hanson Pink Panthers
-UID:63229085-b041-4966-af03-9392a636dcc9@6322.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 9v9\nGame #: 12\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 9v9\nGame #: 12\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T140500Z
 LOCATION:Flagg Street Soccer Complex - Field 6 - 9v9
 DTSTART:20260627T131000Z
 SUMMARY:(GU12) Rockland High School Rockland Bulldogs vs HAYSA
-UID:09c3c4f9-e1d6-443a-ab8e-f34c0cefefa9@09c3.org
+UID:14b72d9d-f09f-4e26-b9d3-6da9ee67d220@14b7.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 177\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 176\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T140500Z
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T131000Z
+SUMMARY:(GU8) Lincoln vs Whitman-Hanson YS Whitman Hanson Pink Panthers
+UID:b014c7a5-0284-4e67-a449-85a94d0ba595@b014.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 11\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T140500Z
+LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
+DTSTART:20260627T131000Z
+SUMMARY:(GU12) Wolfpack FC vs Bridgewater Youth Soccer Association BYSA U12 Team Black
+UID:ab0a39b0-ba40-4423-a288-c7d991a77c79@ab0a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 177\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T140500Z
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T131000Z
 SUMMARY:(GU8) HAYSA Lady Bulldogs vs Behnke
-UID:44c524e7-7e28-4fa0-b058-0aa5b39bbc38@44c5.org
+UID:481b774d-7aed-4197-93a2-d7a533b7ef0a@481b.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 178\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T151500Z
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T142000Z
-SUMMARY:(GU8) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Carver 2nd
-UID:7293f9cb-7e20-424f-af6d-399c31a32215@7293.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 65\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T151500Z
-LOCATION:Flagg Street Soccer Complex - Field 7 - 7v7
-DTSTART:20260627T142000Z
-SUMMARY:(GU10) Abington Youth Soccer Abington McLoughlin GU10 vs Bridgewater Youth Soccer Association BYSA - Walden
-UID:eea14513-9ca5-46d1-932a-d02d4cc44b24@eea1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 66\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 66\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T151500Z
 LOCATION:Flagg Street Soccer Complex - Field 8 - 7v7
 DTSTART:20260627T142000Z
 SUMMARY:(GU10) Holbrook Avon YSA HOLA 4.3(Mills) vs East bridgewater
-UID:5ef07f0f-bb89-4d5a-a62d-857cbb754725@5ef0.org
+UID:03165df9-5bfb-403a-91c9-59b68987aaf8@0316.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 9v9\nGame #: 14\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 178\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T151500Z
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T142000Z
+SUMMARY:(GU8) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Carver 2nd
+UID:00de3d68-cceb-491c-9e57-23550664f859@00de.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 65\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T151500Z
+LOCATION:Flagg Street Soccer Complex - Field 7 - 7v7
+DTSTART:20260627T142000Z
+SUMMARY:(GU10) Abington Youth Soccer Abington McLoughlin GU10 vs Bridgewater Youth Soccer Association BYSA - Walden
+UID:9c1021d5-8f49-4f35-97b9-6413dc20797d@9c10.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 13\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T162500Z
-LOCATION:Flagg Street Soccer Complex - Field 6 - 9v9
+LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
 DTSTART:20260627T153000Z
-SUMMARY:(GU12) HAYSA vs Wolfpack FC
-UID:a53393c7-3ad6-48d3-bb1d-c5acd4785da8@a533.org
+SUMMARY:(GU12) Bridgewater Youth Soccer Association BYSA U12 Team Black vs Rockland High School Rockland Bulldogs
+UID:cc9a1bed-edc9-4d2b-8eda-2aa734f56dbf@cc9a.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 164\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 164\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T162500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T153000Z
 SUMMARY:(BU8) Rising Stars FC Rising Stars FC U9 vs Weigold
-UID:dfad767b-6894-4090-9d8f-a60bb44cda86@dfad.org
+UID:2dfeb385-8728-4e6b-8b40-6af2fe9af6a0@2dfe.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 13\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 9v9\nGame #: 14\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T162500Z
-LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
+LOCATION:Flagg Street Soccer Complex - Field 6 - 9v9
 DTSTART:20260627T153000Z
-SUMMARY:(GU12) Bridgewater Youth Soccer Association BYSA U12 Team Black vs Rockland High School Rockland Bulldogs
-UID:8de0d611-f495-4cf9-a2a9-c2853c560f3c@8de0.org
+SUMMARY:(GU12) HAYSA vs Wolfpack FC
+UID:1766aa85-1630-4e1b-ab2a-62c2d304a668@1766.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 173\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 173\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T173500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T164000Z
 SUMMARY:(GU8) Behnke vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:68f48f1b-edf3-43ec-9d65-2e0b19e21cae@68f4.org
+UID:fca32a6b-8317-4f21-b16a-ed87bad929d5@fca3.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 163\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 163\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T173500Z
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T164000Z
 SUMMARY:(BU8) HAYSA vs Bridgewater Youth Soccer Association BYSA Marsh
-UID:27a2f1d1-d8fc-4433-ada4-5545e466e046@27a2.org
+UID:7cbda67c-28b7-4d1a-9330-acb639864dc8@7cbd.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 174\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T184500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T175000Z
-SUMMARY:(GU8) Carver 2nd vs Lincoln
-UID:0773a597-be1c-4e83-94f9-3db0451059df@0773.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 175\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 175\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T184500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T175000Z
 SUMMARY:(GU8) Raynham Youth Soccer Raynham vs HAYSA Lady Bulldogs
-UID:4d728bea-99d1-4e70-8596-e07e46cb044a@4d72.org
+UID:46dc2755-860d-46da-be7a-de85238be1ab@46dc.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 91\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 174\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T184500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T175000Z
+SUMMARY:(GU8) Carver 2nd vs Lincoln
+UID:dd0cf371-d835-47f2-b273-da53e9bfc4f5@dd0c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 91\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T184500Z
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260627T175000Z
 SUMMARY:(BU10) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Bridgewater United
-UID:70ee259b-04f2-42de-a40c-8135875130a7@70ee.org
+UID:64b653c5-b156-43a0-861d-e205ba55338b@64b6.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 93\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T195500Z
-LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260627T190000Z
-SUMMARY:(BU10) Attleboro Spartans vs Braintree Wamps
-UID:1de63ee3-4b59-48e5-ab47-5277ddde5d13@1de6.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 92\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 92\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T195500Z
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260627T190000Z
 SUMMARY:(BU10) HAYSA squad vs Acushnet Youth Soccer Acushnet FC (Araujo)
-UID:85cea77d-c2c9-4848-b5b0-fbc2a5c8fc67@85ce.org
+UID:d0101c2c-c135-4240-8dce-762090308ae8@d010.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 167\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T210500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260627T201000Z
-SUMMARY:(BU8) Weigold vs Vikings United U8
-UID:1ebe4143-a83f-4777-b624-b71a587951c8@1ebe.org
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 93\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T195500Z
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260627T190000Z
+SUMMARY:(BU10) Attleboro Spartans vs Braintree Wamps
+UID:849ddfce-4fe4-466c-ba8f-da3776bdae83@849d.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 166\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 166\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T210500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260627T201000Z
 SUMMARY:(BU8) Bridgewater Youth Soccer Association BYSA Marsh vs Rising Stars FC Rising Stars FC U9
-UID:f76aeab2-a85b-4a56-847c-5fe351d2c62d@f76a.org
+UID:42f67207-2fe5-40a4-897f-fb0977fcaa3b@42f6.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 94\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 167\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T210500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260627T201000Z
+SUMMARY:(BU8) Weigold vs Vikings United U8
+UID:4404501e-15a8-432e-b04b-7dab9a8ffdef@4404.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 94\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T221500Z
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260627T212000Z
 SUMMARY:(BU10) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs HAYSA squad
-UID:1d489d50-9179-48ba-959b-2a23d9dea2c5@1d48.org
+UID:4ef3a450-e678-4622-a1fc-212443472118@4ef3.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 179\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 179\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T232500Z
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260627T223000Z
 SUMMARY:(GU8) Whitman-Hanson YS Whitman Hanson Pink Panthers vs Raynham Youth Soccer Raynham
-UID:eff93d5f-2be5-4b24-a410-8888aec3840f@eff9.org
+UID:d32e2438-90cb-4f27-a27a-05c2d24b22f3@d32e.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 165\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T232500Z
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260627T223000Z
-SUMMARY:(BU8) Vikings United U8 vs HAYSA
-UID:61da251f-0eec-4343-ae62-0d55fd9f94aa@61da.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 96\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260627T232500Z
-LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260627T223000Z
-SUMMARY:(BU10) Acushnet Youth Soccer Acushnet FC (Araujo) vs Braintree Wamps
-UID:9ec718e1-4956-465e-b092-db0eead2947c@9ec7.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 95\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 95\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260627T232500Z
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260627T223000Z
 SUMMARY:(BU10) Attleboro Spartans vs Bridgewater United
-UID:3d719ce0-3415-4cdc-b9ff-2372c8ba897e@3d71.org
+UID:7b39b360-c483-4767-97f7-b8db93574273@7b39.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 99\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 165\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T232500Z
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260627T223000Z
+SUMMARY:(BU8) Vikings United U8 vs HAYSA
+UID:cc1b5003-466b-44ad-b4a0-9ca8bdc5d0c8@cc1b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 96\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260627T232500Z
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260627T223000Z
+SUMMARY:(BU10) Acushnet Youth Soccer Acushnet FC (Araujo) vs Braintree Wamps
+UID:a528c4c1-b842-43ee-bf6a-d39751d22d10@a528.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 99\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T125500Z
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260628T120000Z
 SUMMARY:(BU10) Bridgewater United vs Acushnet Youth Soccer Acushnet FC (Araujo)
-UID:8bf5e681-3e9b-429d-834b-ddfb45512d35@8bf5.org
+UID:52057bc3-d3a1-493e-9fc5-2bad308ecfb4@5205.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 98\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 98\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T125500Z
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260628T120000Z
 SUMMARY:(BU10) HAYSA squad vs Braintree Wamps
-UID:cb071ef6-761f-45cd-ac49-6131378c71ee@cb07.org
+UID:03745923-3df0-4cc3-94a5-19b62836a228@0374.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 97\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T140500Z
-LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260628T131000Z
-SUMMARY:(BU10) Attleboro Spartans vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:d6c16b64-0fda-4aa1-bbcb-fe3d877bf132@d6c1.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 15\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T140500Z
-LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
-DTSTART:20260628T131000Z
-SUMMARY:(GU12) Wolfpack FC vs Rockland High School Rockland Bulldogs
-UID:33e44eab-8794-4b37-9c46-7f705c1f47d1@33e4.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 9v9\nGame #: 16\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 6 - 9v9\nGame #: 16\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T140500Z
 LOCATION:Flagg Street Soccer Complex - Field 6 - 9v9
 DTSTART:20260628T131000Z
 SUMMARY:(GU12) HAYSA vs Bridgewater Youth Soccer Association BYSA U12 Team Black
-UID:f1af7df5-f204-4ef3-806b-628b93b3f4bb@f1af.org
+UID:32906472-c95e-4880-b895-fd88bbba518a@3290.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 100\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T162500Z
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 15\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T140500Z
+LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
+DTSTART:20260628T131000Z
+SUMMARY:(GU12) Wolfpack FC vs Rockland High School Rockland Bulldogs
+UID:3d9c9e83-b666-4c89-84e3-d1cb418f3eb5@3d9c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 97\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T140500Z
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260628T153000Z
-SUMMARY:(BU10) Bridgewater United vs HAYSA squad
-UID:3c2485b1-6615-4f70-86ab-5818bd121766@3c24.org
+DTSTART:20260628T131000Z
+SUMMARY:(BU10) Attleboro Spartans vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:8f828d65-805e-4611-b759-cdd766c669b2@8f82.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 17 Final\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 5 - 9v9\nGame #: 17 Final\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T162500Z
 LOCATION:Flagg Street Soccer Complex - Field 5 - 9v9
 DTSTART:20260628T153000Z
 SUMMARY:(GU12) Bridgewater Youth Soccer Association BYSA U12 Team Black vs Rockland High School Rockland Bulldogs
-UID:87ae3140-1570-4863-8982-a754d96fccc5@87ae.org
+UID:9e09ef2f-bbca-455e-814b-35a5fc29ac9d@9e09.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 101\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 100\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T162500Z
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260628T153000Z
+SUMMARY:(BU10) Bridgewater United vs HAYSA squad
+UID:3c129584-33ab-494c-8dd4-497a6f02bc5b@3c12.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 101\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T162500Z
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260628T153000Z
 SUMMARY:(BU10) Braintree Wamps vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:2ea9ca2e-5a56-4eaf-9eb8-87d9b314a16e@2ea9.org
+UID:f078aca8-118f-4607-ada3-281dde222bd2@f078.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 181\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T173500Z
-LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
-DTSTART:20260628T164000Z
-SUMMARY:(GU8) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Raynham Youth Soccer Raynham
-UID:1a354ab8-ce14-409a-8809-8dbb51247af4@1a35.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 172\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T173500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T164000Z
-SUMMARY:(BU8) Vikings United U8 vs Bridgewater Youth Soccer Association BYSA Marsh
-UID:f0148ca9-b04d-4313-a80c-09c8cc125d1f@f014.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 102\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 102\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T173500Z
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260628T164000Z
 SUMMARY:(BU10) Acushnet Youth Soccer Acushnet FC (Araujo) vs Attleboro Spartans
-UID:2fd31571-63c1-45b3-93fc-64f9f4e53ba6@2fd3.org
+UID:fcc957b9-b96b-48ac-9872-b50ad8c61e6b@fcc9.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 180\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 172\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T173500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T164000Z
+SUMMARY:(BU8) Vikings United U8 vs Bridgewater Youth Soccer Association BYSA Marsh
+UID:ac124bf6-cfc0-4a7c-a1db-8b5d569c0364@ac12.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 181\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T173500Z
+LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
+DTSTART:20260628T164000Z
+SUMMARY:(GU8) Acushnet Youth Soccer Acushnet FC (Garcia Jr) vs Raynham Youth Soccer Raynham
+UID:12a79503-5125-47cf-bad4-b01c7fbbef29@12a7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 180\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T184500Z
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260628T175000Z
 SUMMARY:(GU8) Whitman-Hanson YS Whitman Hanson Pink Panthers vs HAYSA Lady Bulldogs
-UID:d376b525-a13a-40b8-b0b0-c662c09c2183@d376.org
+UID:4d55b977-d2f9-43e7-927e-aefa7e37400b@4d55.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 182\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 182\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T184500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260628T175000Z
 SUMMARY:(GU8) Behnke vs Lincoln
-UID:a46723c3-2219-45c1-a64e-c1231e7772b4@a467.org
+UID:cf31bf3b-be4d-442a-af82-dea9fbaa92a1@cf31.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 171\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T195500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T190000Z
-SUMMARY:(BU8) HAYSA vs Rising Stars FC Rising Stars FC U9
-UID:b33b51ce-c56c-4b07-aa94-87a73799ed46@b33b.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 170\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 170\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T195500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260628T190000Z
 SUMMARY:(BU8) Bridgewater Youth Soccer Association BYSA Marsh vs Weigold
-UID:54cb593c-91a8-4bb0-b2a6-bd7ebfc51b73@54cb.org
+UID:0c0d3473-d4ef-4df9-88eb-1a92026d0b13@0c0d.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 67\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 171\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T195500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T190000Z
+SUMMARY:(BU8) HAYSA vs Rising Stars FC Rising Stars FC U9
+UID:1408ba0c-db98-4720-9f9d-d71804d3d97e@1408.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 67\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T210500Z
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260628T201000Z
 SUMMARY:(GU10) East bridgewater vs Bridgewater Youth Soccer Association BYSA - Walden
-UID:f0150b8d-7460-4e4b-8485-e62d2eae0e00@f015.org
+UID:44232e34-4b55-469a-95c2-ec90fb771dce@4423.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 68\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T210500Z
-LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
-DTSTART:20260628T201000Z
-SUMMARY:(GU10) Holbrook Avon YSA HOLA 4.3(Mills) vs Abington Youth Soccer Abington McLoughlin GU10
-UID:e4e3ca7c-c7fd-4b7b-9821-b83494ddbe82@e4e3.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 183\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T210500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T201000Z
-SUMMARY:(GU8) Lincoln vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
-UID:31f63b64-3be5-4fea-8407-e3b394f1c4b7@31f6.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 184\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 184\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T210500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260628T201000Z
 SUMMARY:(GU8) Carver 2nd vs Whitman-Hanson YS Whitman Hanson Pink Panthers
-UID:5758dfd8-68d0-4f88-932f-a3b7a9ba8667@5758.org
+UID:8ef6af9a-7f03-4ea4-89d8-735bd0644c60@8ef6.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 185\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 68\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T210500Z
+LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
+DTSTART:20260628T201000Z
+SUMMARY:(GU10) Holbrook Avon YSA HOLA 4.3(Mills) vs Abington Youth Soccer Abington McLoughlin GU10
+UID:fc4986c3-ce05-4fe0-888e-890f5772b51c@fc49.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 183\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T210500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T201000Z
+SUMMARY:(GU8) Lincoln vs Acushnet Youth Soccer Acushnet FC (Garcia Jr)
+UID:9b6abdee-a1b8-46bc-afbc-513afd3aef35@9b6a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 185\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T221500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260628T212000Z
 SUMMARY:(GU8) Raynham Youth Soccer Raynham vs Behnke
-UID:57e5f9bd-1c30-4468-b5a1-0900b00a5b9f@57e5.org
+UID:1f185017-ff5a-45da-8e63-0bb0f50c78c9@1f18.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 168\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 168\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T221500Z
 LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
 DTSTART:20260628T212000Z
 SUMMARY:(BU8) Weigold vs HAYSA
-UID:00eb2dcd-6dd5-49d5-b035-3382dd75eb96@00eb.org
+UID:69d55f25-91a2-470f-84b1-f4aa9a36620d@69d5.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 169\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T232500Z
-LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
-DTSTART:20260628T223000Z
-SUMMARY:(BU8) Rising Stars FC Rising Stars FC U9 vs Vikings United U8
-UID:6119be01-a5f5-4d70-95be-4fc34e840ba5@6119.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 145 4th Game A\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
-DTEND:20260628T232500Z
-LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
-DTSTART:20260628T223000Z
-SUMMARY:(GU10) Abington Youth Soccer Abington McLoughlin GU10 vs Holbrook Avon YSA HOLA 4.3(Mills)
-UID:edd4e819-7a7b-4257-afa9-4581358896b9@edd4.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 186\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 2 - 6v6\nGame #: 186\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T232500Z
 LOCATION:Flagg Street Soccer Complex - Field 2 - 6v6
 DTSTART:20260628T223000Z
 SUMMARY:(GU8) HAYSA Lady Bulldogs vs Carver 2nd
-UID:886c559e-5426-4c26-8fc2-91ad50143b50@886c.org
+UID:016eebfc-37a8-4d73-87a6-ec138e2be43c@016e.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 146 4th Game B\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 10:59 AM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 1 - 6v6\nGame #: 169\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T232500Z
+LOCATION:Flagg Street Soccer Complex - Field 1 - 6v6
+DTSTART:20260628T223000Z
+SUMMARY:(BU8) Rising Stars FC Rising Stars FC U9 vs Vikings United U8
+UID:d0cb46ae-5fc0-4eb5-9302-606ec1d3f8a5@d0cb.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 146 4th Game B\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
 DTEND:20260628T232500Z
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
 DTSTART:20260628T223000Z
 SUMMARY:(GU10) Bridgewater Youth Soccer Association BYSA - Walden vs East bridgewater
-UID:9106db66-05b2-440b-a6fa-b91d57193c98@9106.org
+UID:41597541-0580-44bd-bd35-72cad1a0533b@4159.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 145 4th Game A\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 19\, 2026 11:28 AM)
+DTEND:20260628T232500Z
+LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
+DTSTART:20260628T223000Z
+SUMMARY:(GU10) Abington Youth Soccer Abington McLoughlin GU10 vs Holbrook Avon YSA HOLA 4.3(Mills)
+UID:057df257-8352-436d-b1f0-eed6e462947e@057d.org
 END:VEVENT
 END:VCALENDAR
