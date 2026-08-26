@@ -2,67 +2,67 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 65\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 02:46 PM)
-DTEND:20260627T151500Z
-LOCATION:Flagg Street Soccer Complex - Field 7 - 7v7
-DTSTART:20260627T142000Z
-SUMMARY:(GU10) Abington Youth Soccer Abington McLoughlin GU10 vs Bridgewater Youth Soccer Association BYSA - Walden
-UID:8f5e62d1-dd6a-409f-aef3-34c765cf0e71@8f5e.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 66\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 02:46 PM)
-DTEND:20260627T151500Z
-LOCATION:Flagg Street Soccer Complex - Field 8 - 7v7
-DTSTART:20260627T142000Z
-SUMMARY:(GU10) Holbrook Avon YSA HOLA 4.3(Mills) vs East bridgewater
-UID:c78c0eec-3483-46fa-9d12-b537bac14dbe@c78c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 64\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 02:46 PM)
-DTEND:20260627T125500Z
-LOCATION:Flagg Street Soccer Complex - Field 7 - 7v7
-DTSTART:20260627T120000Z
-SUMMARY:(GU10) Bridgewater Youth Soccer Association BYSA - Walden vs Holbrook Avon YSA HOLA 4.3(Mills)
-UID:1981cd8d-40da-4b83-90e9-8aba02477306@1981.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 146 4th Game B\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 02:46 PM)
-DTEND:20260628T232500Z
-LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
-DTSTART:20260628T223000Z
-SUMMARY:(GU10) Bridgewater Youth Soccer Association BYSA - Walden vs East bridgewater
-UID:4ce59294-7bfc-47a7-aeaf-2c9a389f3420@4ce5.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 145 4th Game A\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 02:46 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 145 4th Game A\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 05:15 PM)
 DTEND:20260628T232500Z
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260628T223000Z
 SUMMARY:(GU10) Abington Youth Soccer Abington McLoughlin GU10 vs Holbrook Avon YSA HOLA 4.3(Mills)
-UID:b948260d-c29a-4a5b-95f8-20cee5854308@b948.org
+UID:4a675c2b-0eb4-4068-b68e-f64a0083ac1b@4a67.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 67\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 02:46 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 3 - 7v7\nGame #: 67\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 05:15 PM)
 DTEND:20260628T210500Z
 LOCATION:Flagg Street Soccer Complex - Field 3 - 7v7
 DTSTART:20260628T201000Z
 SUMMARY:(GU10) East bridgewater vs Bridgewater Youth Soccer Association BYSA - Walden
-UID:c78c4868-7928-4da7-8fdc-c71295bf9189@c78c.org
+UID:fc7a0437-09d3-4559-ad1a-085b32da9a07@fc7a.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 68\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 02:46 PM)
-DTEND:20260628T210500Z
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 66\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 05:15 PM)
+DTEND:20260627T151500Z
+LOCATION:Flagg Street Soccer Complex - Field 8 - 7v7
+DTSTART:20260627T142000Z
+SUMMARY:(GU10) Holbrook Avon YSA HOLA 4.3(Mills) vs East bridgewater
+UID:58b9a7b7-ae34-433a-8946-f882a27ea26e@58b9.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 146 4th Game B\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 05:15 PM)
+DTEND:20260628T232500Z
 LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
-DTSTART:20260628T201000Z
-SUMMARY:(GU10) Holbrook Avon YSA HOLA 4.3(Mills) vs Abington Youth Soccer Abington McLoughlin GU10
-UID:d6288086-e983-4e29-9faa-85dc06ef17c6@d628.org
+DTSTART:20260628T223000Z
+SUMMARY:(GU10) Bridgewater Youth Soccer Association BYSA - Walden vs East bridgewater
+UID:49454b0b-951f-4f95-8d7d-bece57c5fbf0@4945.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 63\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 02:46 PM)
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 64\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 05:15 PM)
+DTEND:20260627T125500Z
+LOCATION:Flagg Street Soccer Complex - Field 7 - 7v7
+DTSTART:20260627T120000Z
+SUMMARY:(GU10) Bridgewater Youth Soccer Association BYSA - Walden vs Holbrook Avon YSA HOLA 4.3(Mills)
+UID:74b091d0-19f6-4284-93d1-b838a7dfd0fd@74b0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 7 - 7v7\nGame #: 65\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 05:15 PM)
+DTEND:20260627T151500Z
+LOCATION:Flagg Street Soccer Complex - Field 7 - 7v7
+DTSTART:20260627T142000Z
+SUMMARY:(GU10) Abington Youth Soccer Abington McLoughlin GU10 vs Bridgewater Youth Soccer Association BYSA - Walden
+UID:cd35085d-63bf-4f6c-a175-47d481170cbd@cd35.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 8 - 7v7\nGame #: 63\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 05:15 PM)
 DTEND:20260627T125500Z
 LOCATION:Flagg Street Soccer Complex - Field 8 - 7v7
 DTSTART:20260627T120000Z
 SUMMARY:(GU10) East bridgewater vs Abington Youth Soccer Abington McLoughlin GU10
-UID:b6911850-a48c-4053-a752-fa0bd683ccf2@b691.org
+UID:9f8a2ede-d770-46ee-aed2-970dc45911e0@9f8a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Field: Flagg Street Soccer Complex - Field 4 - 7v7\nGame #: 68\nSubmit PINs: https://system.gotsport.com/org_event/events/52266/submit_pins/new\n\n(last refreshed Aug 26\, 2026 05:15 PM)
+DTEND:20260628T210500Z
+LOCATION:Flagg Street Soccer Complex - Field 4 - 7v7
+DTSTART:20260628T201000Z
+SUMMARY:(GU10) Holbrook Avon YSA HOLA 4.3(Mills) vs Abington Youth Soccer Abington McLoughlin GU10
+UID:4ba32a41-7e14-4969-8db1-6fb69c84c567@4ba3.org
 END:VEVENT
 END:VCALENDAR
